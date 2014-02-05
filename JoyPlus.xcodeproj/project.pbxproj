@@ -17,7 +17,6 @@
 		96A5CF0A18A2AAA20072AFAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96A5CF0818A2AAA20072AFAB /* Main.storyboard */; };
 		96A5CF0D18A2AAA20072AFAB /* JPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF0C18A2AAA20072AFAB /* JPViewController.m */; };
 		96A5CF1018A2AAA20072AFAB /* JPMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF0F18A2AAA20072AFAB /* JPMyScene.m */; };
-		96A5CF1218A2AAA20072AFAB /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A5CF1118A2AAA20072AFAB /* Spaceship.png */; };
 		96A5CF1418A2AAA20072AFAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A5CF1318A2AAA20072AFAB /* Images.xcassets */; };
 		96A5CF1B18A2AAA20072AFAB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CF1A18A2AAA20072AFAB /* XCTest.framework */; };
 		96A5CF1C18A2AAA20072AFAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF418A2AAA20072AFAB /* Foundation.framework */; };
@@ -27,6 +26,8 @@
 		96A5CF3718A2AE180072AFAB /* JCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3418A2AE180072AFAB /* JCButton.m */; };
 		96A5CF3818A2AE180072AFAB /* JCJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3618A2AE180072AFAB /* JCJoystick.m */; };
 		96A5CF3C18A2B0190072AFAB /* JPConnectScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3B18A2B0190072AFAB /* JPConnectScene.m */; };
+		96A5CF3F18A2B21B0072AFAB /* JPControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3E18A2B21B0072AFAB /* JPControlLayout.m */; };
+		96A5CF4318A2B44D0072AFAB /* JPJoy2Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +57,6 @@
 		96A5CF0C18A2AAA20072AFAB /* JPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPViewController.m; sourceTree = "<group>"; };
 		96A5CF0E18A2AAA20072AFAB /* JPMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPMyScene.h; sourceTree = "<group>"; };
 		96A5CF0F18A2AAA20072AFAB /* JPMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JPMyScene.m; sourceTree = "<group>"; };
-		96A5CF1118A2AAA20072AFAB /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		96A5CF1318A2AAA20072AFAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96A5CF1918A2AAA20072AFAB /* JoyPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JoyPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A5CF1A18A2AAA20072AFAB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -69,6 +69,10 @@
 		96A5CF3618A2AE180072AFAB /* JCJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCJoystick.m; sourceTree = "<group>"; };
 		96A5CF3A18A2B0190072AFAB /* JPConnectScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPConnectScene.h; sourceTree = "<group>"; };
 		96A5CF3B18A2B0190072AFAB /* JPConnectScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPConnectScene.m; sourceTree = "<group>"; };
+		96A5CF3D18A2B21B0072AFAB /* JPControlLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPControlLayout.h; sourceTree = "<group>"; };
+		96A5CF3E18A2B21B0072AFAB /* JPControlLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPControlLayout.m; sourceTree = "<group>"; };
+		96A5CF4118A2B44D0072AFAB /* JPJoy2Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPJoy2Button.h; sourceTree = "<group>"; };
+		96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJoy2Button.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +144,7 @@
 				96A5CF0F18A2AAA20072AFAB /* JPMyScene.m */,
 				96A5CF3A18A2B0190072AFAB /* JPConnectScene.h */,
 				96A5CF3B18A2B0190072AFAB /* JPConnectScene.m */,
-				96A5CF1118A2AAA20072AFAB /* Spaceship.png */,
+				96A5CF4018A2B22C0072AFAB /* Layout */,
 				96A5CF1318A2AAA20072AFAB /* Images.xcassets */,
 				96A5CEFD18A2AAA20072AFAB /* Supporting Files */,
 			);
@@ -185,6 +189,17 @@
 				96A5CF3618A2AE180072AFAB /* JCJoystick.m */,
 			);
 			name = JCInput;
+			sourceTree = "<group>";
+		};
+		96A5CF4018A2B22C0072AFAB /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				96A5CF3D18A2B21B0072AFAB /* JPControlLayout.h */,
+				96A5CF3E18A2B21B0072AFAB /* JPControlLayout.m */,
+				96A5CF4118A2B44D0072AFAB /* JPJoy2Button.h */,
+				96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */,
+			);
+			name = Layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +281,6 @@
 			files = (
 				96A5CF0118A2AAA20072AFAB /* InfoPlist.strings in Resources */,
 				96A5CF1418A2AAA20072AFAB /* Images.xcassets in Resources */,
-				96A5CF1218A2AAA20072AFAB /* Spaceship.png in Resources */,
 				96A5CF0A18A2AAA20072AFAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,11 +300,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A5CF4318A2B44D0072AFAB /* JPJoy2Button.m in Sources */,
 				96A5CF3718A2AE180072AFAB /* JCButton.m in Sources */,
 				96A5CF1018A2AAA20072AFAB /* JPMyScene.m in Sources */,
 				96A5CF0718A2AAA20072AFAB /* JPAppDelegate.m in Sources */,
 				96A5CF3C18A2B0190072AFAB /* JPConnectScene.m in Sources */,
 				96A5CF0D18A2AAA20072AFAB /* JPViewController.m in Sources */,
+				96A5CF3F18A2B21B0072AFAB /* JPControlLayout.m in Sources */,
 				96A5CF0318A2AAA20072AFAB /* main.m in Sources */,
 				96A5CF3818A2AE180072AFAB /* JCJoystick.m in Sources */,
 			);

@@ -1,22 +1,18 @@
 //
-//  JPConnectScene.m
+//  JPControlLayout.m
 //  JoyPlus
 //
 //  Created by Ciel Breiz on 6/2/14.
 //  Copyright (c) 2014 Ciel Breiz. All rights reserved.
 //
 
-#import "JPConnectScene.h"
+#import "JPControlLayout.h"
 #import "JPMyScene.h"
-#import "JPJoy2Button.h"
 
-@implementation JPConnectScene
-
+@implementation JPControlLayout
 
 -(id)initWithSize:(CGSize)size {
-    if (self = [super initWithSize:size]) {
-        /* Setup your scene here */
-        
+    if(self = [super initWithSize:size]){
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
         SKLabelNode *back = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
@@ -26,14 +22,6 @@
         back.name = @"back";
         back.zPosition = 1.0;
         [self addChild:back];
-        
-        SKLabelNode *next = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        next.text = @"[ next ]";
-        next.fontSize = 15;
-        next.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)-70);
-        next.name = @"next";
-        next.zPosition = 1.0;
-        [self addChild:next];
     }
     return self;
 }
@@ -52,14 +40,18 @@
         scene.scaleMode = SKSceneScaleModeAspectFill;
         [skView presentScene:scene];
     }
-    
-    if ([node.name isEqualToString:@"next"]) {
-        SKView * skView = (SKView *)self.view;
-        NSLog(@"Connect. Going to ConnectScene");
-        SKScene * scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
-        scene.scaleMode = SKSceneScaleModeAspectFill;
-        [skView presentScene:scene];
-    }
+}
+
+-(JCButton*)createButtonWithColor:(SKColor*)color
+{
+    JCButton* button = [[JCButton alloc] initWithButtonRadius:25 color:color pressedColor:[SKColor blackColor] isTurbo:NO];
+    return button;
+}
+
+-(JCJoystick*)createJoystic
+{
+    JCJoystick* joystick = [[JCJoystick alloc] initWithControlRadius:40 baseRadius:45 baseColor:[SKColor blueColor] joystickRadius:25 joystickColor:[SKColor redColor]];
+    return joystick;
 }
 
 @end
