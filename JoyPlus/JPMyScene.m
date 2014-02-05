@@ -7,6 +7,7 @@
 //
 
 #import "JPMyScene.h"
+#import "JPConnectScene.h"
 
 @implementation JPMyScene
 
@@ -18,31 +19,37 @@
         
         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         
-        myLabel.text = @"Hello, World!";
+        myLabel.text = @"Joy Plus";
         myLabel.fontSize = 30;
         myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
                                        CGRectGetMidY(self.frame));
         
         [self addChild:myLabel];
+        
+        SKLabelNode *connect = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        connect.text = @"[ connect ]";
+        connect.fontSize = 15;
+        connect.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)-40);
+        connect.name = @"connect";
+        connect.zPosition = 1.0;
+        [self addChild:connect];
     }
     return self;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInNode:self];
+    SKNode *node = [self nodeAtPoint:location];
     
-    for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
+    //if fire button touched, bring the rain
+    if ([node.name isEqualToString:@"connect"]) {
+        SKView * skView = (SKView *)self.view;
+        NSLog(@"Connect. Going to ConnectScene");
+        SKScene * scene = [JPConnectScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        [skView presentScene:scene];
     }
 }
 
