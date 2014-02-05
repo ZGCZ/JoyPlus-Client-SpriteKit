@@ -9,6 +9,7 @@
 #import "JPConnectScene.h"
 #import "JPMyScene.h"
 #import "JPJoy2Button.h"
+#import "JPJoy3Button.h"
 
 @implementation JPConnectScene
 
@@ -47,7 +48,7 @@
     //if fire button touched, bring the rain
     if ([node.name isEqualToString:@"back"]) {
         SKView * skView = (SKView *)self.view;
-        NSLog(@"Connect. Going to ConnectScene");
+        NSLog(@"Connect. Going to MyScene");
         SKScene * scene = [JPMyScene sceneWithSize:skView.bounds.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         [skView presentScene:scene];
@@ -55,8 +56,8 @@
     
     if ([node.name isEqualToString:@"next"]) {
         SKView * skView = (SKView *)self.view;
-        NSLog(@"Connect. Going to ConnectScene");
-        SKScene * scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
+        NSLog(@"Connect. Going to ControlScene");
+        SKScene * scene = [JPJoy3Button sceneWithSize:skView.bounds.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         [skView presentScene:scene];
     }

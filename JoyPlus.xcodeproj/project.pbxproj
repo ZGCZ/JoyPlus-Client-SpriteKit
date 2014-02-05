@@ -28,6 +28,7 @@
 		96A5CF3C18A2B0190072AFAB /* JPConnectScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3B18A2B0190072AFAB /* JPConnectScene.m */; };
 		96A5CF3F18A2B21B0072AFAB /* JPControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3E18A2B21B0072AFAB /* JPControlLayout.m */; };
 		96A5CF4318A2B44D0072AFAB /* JPJoy2Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */; };
+		96A5CF4618A2B8C30072AFAB /* JPJoy3Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF4518A2B8C30072AFAB /* JPJoy3Button.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		96A5CF3E18A2B21B0072AFAB /* JPControlLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPControlLayout.m; sourceTree = "<group>"; };
 		96A5CF4118A2B44D0072AFAB /* JPJoy2Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPJoy2Button.h; sourceTree = "<group>"; };
 		96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJoy2Button.m; sourceTree = "<group>"; };
+		96A5CF4418A2B8C30072AFAB /* JPJoy3Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPJoy3Button.h; sourceTree = "<group>"; };
+		96A5CF4518A2B8C30072AFAB /* JPJoy3Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJoy3Button.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 				96A5CF3E18A2B21B0072AFAB /* JPControlLayout.m */,
 				96A5CF4118A2B44D0072AFAB /* JPJoy2Button.h */,
 				96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */,
+				96A5CF4418A2B8C30072AFAB /* JPJoy3Button.h */,
+				96A5CF4518A2B8C30072AFAB /* JPJoy3Button.m */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				96A5CF0718A2AAA20072AFAB /* JPAppDelegate.m in Sources */,
 				96A5CF3C18A2B0190072AFAB /* JPConnectScene.m in Sources */,
 				96A5CF0D18A2AAA20072AFAB /* JPViewController.m in Sources */,
+				96A5CF4618A2B8C30072AFAB /* JPJoy3Button.m in Sources */,
 				96A5CF3F18A2B21B0072AFAB /* JPControlLayout.m in Sources */,
 				96A5CF0318A2AAA20072AFAB /* main.m in Sources */,
 				96A5CF3818A2AE180072AFAB /* JCJoystick.m in Sources */,
