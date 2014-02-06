@@ -14,7 +14,7 @@
 
 @property (strong, nonatomic) NSMutableArray *controllers;
 
--(JCButton*)createButtonWithColor:(SKColor*)color;
--(JCJoystick*)createJoystic;
+-(JCButton*)createButtonWithColor:(SKColor*)color andName:(NSString*)name;
+-(JCJoystick*)createJoysticWithName:(NSString*)name;
 
 @end
