@@ -47,7 +47,7 @@
 
 -(NSString*)informationJSONString
 {
-    return @"{\"type\": \"Joy2Button\"}";
+    return @"{\"type\": \"Joy3Button\"}";
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

@@ -52,6 +52,31 @@
     return joystick;
 }
 
+-(SKButton*)createButton
+{
+    static char t = 'A';
+    NSString* tag = [NSString stringWithFormat:@"%c", t];
+    SKButton *buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
+    buttonOne.tag = tag;
+    [buttonOne.title setText:tag];
+    [buttonOne.title setFontName:@"Chalkduster"];
+    [buttonOne.title setFontSize:30];
+    [buttonOne link];
+    t++;
+    return buttonOne;
+}
+
+-(SKButton*)createButtonWithTitle:(NSString*)title andTag:(NSString*)tag
+{
+    SKButton *buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
+    buttonOne.tag = tag;
+    [buttonOne.title setText:title];
+    [buttonOne.title setFontName:@"Chalkduster"];
+    [buttonOne.title setFontSize:30];
+    [buttonOne link];
+    return buttonOne;
+}
+
 -(NSString*)getAllControllerStat
 {
     NSMutableString *stat = [NSMutableString stringWithString:@""];
