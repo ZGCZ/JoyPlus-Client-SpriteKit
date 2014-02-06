@@ -8,12 +8,23 @@
 
 #import "JPJoy2Button.h"
 
+@interface JPJoy2Button (){
+    SKLabelNode *moveMe;
+}
+@end
+
 @implementation JPJoy2Button
 @synthesize joystick, buttonOne, buttonTwo;
 
 -(id)initWithSize:(CGSize)size
 {
     if(self = [super initWithSize:size]){
+        moveMe = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        moveMe.text = @"Move me";
+        moveMe.fontSize = 15;
+        moveMe.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
+        [self addChild:moveMe];
+        
         self.joystick = [self createDefaultJoystick];
         [self.controllers addObject:self.joystick];
         [self addChild:self.joystick];
@@ -38,6 +49,11 @@
 -(void)buttonAction
 {
     NSLog(@"Test");
+}
+
+-(void)update:(CFTimeInterval)currentTime {
+    [super update:currentTime];
+    moveMe.position = CGPointMake(moveMe.position.x + 0.05 *joystick.velocity.x, moveMe.position.y + 0.05* joystick.velocity.y);
 }
     
 @end
