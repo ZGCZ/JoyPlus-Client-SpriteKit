@@ -12,6 +12,8 @@
 
 @interface JPControlLayout : SKScene
 
+@property (strong, nonatomic) NSMutableArray *controllers;
+
 -(JCButton*)createButtonWithColor:(SKColor*)color;
 -(JCJoystick*)createJoystic;
 

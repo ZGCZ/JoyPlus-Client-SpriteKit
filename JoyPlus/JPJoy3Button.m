@@ -16,18 +16,22 @@
     if(self = [super initWithSize:size]){
         self.joystick = [self createJoystic];
         [self.joystick setPosition:CGPointMake(70,70)];
+        [self.controllers addObject:joystick];
         [self addChild:self.joystick];
         
         self.buttonRed = [self createButtonWithColor:[SKColor redColor]];
         [self.buttonRed setPosition:CGPointMake(size.width - 40,150)];
+        [self.controllers addObject:buttonRed];
         [self addChild:self.buttonRed];
         
         self.buttonYellow = [self createButtonWithColor:[SKColor yellowColor]];
         [self.buttonYellow setPosition:CGPointMake(size.width - 90,120)];
+        [self.controllers addObject:buttonYellow];
         [self addChild:self.buttonYellow];
         
         self.buttonYellow = [self createButtonWithColor:[SKColor blueColor]];
         [self.buttonYellow setPosition:CGPointMake(size.width - 140,90)];
+        [self.controllers addObject:buttonYellow];
         [self addChild:self.buttonYellow];
     }
     return self;

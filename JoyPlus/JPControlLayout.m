@@ -10,6 +10,7 @@
 #import "JPMyScene.h"
 
 @implementation JPControlLayout
+@synthesize controllers;
 
 -(id)initWithSize:(CGSize)size {
     if(self = [super initWithSize:size]){
@@ -22,6 +23,8 @@
         back.name = @"back";
         back.zPosition = 1.0;
         [self addChild:back];
+        
+        controllers = [[NSMutableArray alloc] initWithCapacity:5];
     }
     return self;
 }
@@ -52,6 +55,17 @@
 {
     JCJoystick* joystick = [[JCJoystick alloc] initWithControlRadius:40 baseRadius:45 baseColor:[SKColor blueColor] joystickRadius:25 joystickColor:[SKColor redColor]];
     return joystick;
+}
+
+-(NSString*)getAllControllerStat
+{
+    NSString *stat = @"";
+    //get all object stat;
+    return stat;
+}
+
+-(void)update:(CFTimeInterval)currentTime {
+    NSLog(@"Now pusing stat: %@", [self getAllControllerStat]);
 }
 
 @end
