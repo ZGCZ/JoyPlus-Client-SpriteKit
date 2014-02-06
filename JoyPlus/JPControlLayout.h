@@ -7,13 +7,13 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "JCJoystick.h"
+#import "Joystick.h"
 #import "SKButton+JPButton.h"
 
 @interface JPControlLayout : SKScene
 
 @property (strong, nonatomic) NSMutableArray *controllers;
 
--(JCJoystick*)createJoysticWithName:(NSString*)name;
+-(Joystick*)createDefaultJoystick;
 
 @end

@@ -10,7 +10,7 @@
 
 @interface JPJoy3Button : JPControlLayout
 
-@property (strong, nonatomic) JCJoystick *joystick;
+@property (strong, nonatomic) Joystick *joystick;
 @property (strong, nonatomic) SKButton *buttonOne;
 @property (strong, nonatomic) SKButton *buttonTwo;
 @property (strong, nonatomic) SKButton *buttonThree;

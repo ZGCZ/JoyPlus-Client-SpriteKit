@@ -31,11 +31,13 @@
 		96A5CF1D18A2AAA20072AFAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF818A2AAA20072AFAB /* UIKit.framework */; };
 		96A5CF2518A2AAA20072AFAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96A5CF2318A2AAA20072AFAB /* InfoPlist.strings */; };
 		96A5CF2718A2AAA20072AFAB /* JoyPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF2618A2AAA20072AFAB /* JoyPlusTests.m */; };
-		96A5CF3818A2AE180072AFAB /* JCJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3618A2AE180072AFAB /* JCJoystick.m */; };
 		96A5CF3C18A2B0190072AFAB /* JPConnectScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3B18A2B0190072AFAB /* JPConnectScene.m */; };
 		96A5CF3F18A2B21B0072AFAB /* JPControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3E18A2B21B0072AFAB /* JPControlLayout.m */; };
 		96A5CF4318A2B44D0072AFAB /* JPJoy2Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */; };
 		96A5CF4618A2B8C30072AFAB /* JPJoy3Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF4518A2B8C30072AFAB /* JPJoy3Button.m */; };
+		96C29BF518A3A57E0034DA75 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C29BF418A3A57E0034DA75 /* Joystick.m */; };
+		96C29BF818A3A5A10034DA75 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C29BF618A3A5A10034DA75 /* dpad.png */; };
+		96C29BF918A3A5A10034DA75 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C29BF718A3A5A10034DA75 /* joystick.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +84,6 @@
 		96A5CF2218A2AAA20072AFAB /* JoyPlusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoyPlusTests-Info.plist"; sourceTree = "<group>"; };
 		96A5CF2418A2AAA20072AFAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96A5CF2618A2AAA20072AFAB /* JoyPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JoyPlusTests.m; sourceTree = "<group>"; };
-		96A5CF3518A2AE180072AFAB /* JCJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCJoystick.h; sourceTree = "<group>"; };
-		96A5CF3618A2AE180072AFAB /* JCJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCJoystick.m; sourceTree = "<group>"; };
 		96A5CF3A18A2B0190072AFAB /* JPConnectScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPConnectScene.h; sourceTree = "<group>"; };
 		96A5CF3B18A2B0190072AFAB /* JPConnectScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPConnectScene.m; sourceTree = "<group>"; };
 		96A5CF3D18A2B21B0072AFAB /* JPControlLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPControlLayout.h; sourceTree = "<group>"; };
@@ -92,6 +92,10 @@
 		96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJoy2Button.m; sourceTree = "<group>"; };
 		96A5CF4418A2B8C30072AFAB /* JPJoy3Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPJoy3Button.h; sourceTree = "<group>"; };
 		96A5CF4518A2B8C30072AFAB /* JPJoy3Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPJoy3Button.m; sourceTree = "<group>"; };
+		96C29BF318A3A57E0034DA75 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		96C29BF418A3A57E0034DA75 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
+		96C29BF618A3A5A10034DA75 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpad.png; sourceTree = "<group>"; };
+		96C29BF718A3A5A10034DA75 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 				9655AFC818A33622000960E9 /* Button2Sel.png */,
 				9655AFC918A33622000960E9 /* Button3.png */,
 				9655AFCA18A33622000960E9 /* Button3Sel.png */,
+				96C29BF618A3A5A10034DA75 /* dpad.png */,
+				96C29BF718A3A5A10034DA75 /* joystick.png */,
 			);
 			name = Images;
 			path = JoyPlus/Images;
@@ -218,8 +224,8 @@
 			isa = PBXGroup;
 			children = (
 				9655AFC018A32CAE000960E9 /* JPController.h */,
-				96A5CF3518A2AE180072AFAB /* JCJoystick.h */,
-				96A5CF3618A2AE180072AFAB /* JCJoystick.m */,
+				96C29BF318A3A57E0034DA75 /* Joystick.h */,
+				96C29BF418A3A57E0034DA75 /* Joystick.m */,
 				9655AFC118A3342C000960E9 /* SKButton.h */,
 				9655AFC218A3342C000960E9 /* SKButton.m */,
 				9655AFD118A345C3000960E9 /* SKButton+JPButton.h */,
@@ -320,10 +326,12 @@
 			files = (
 				96A5CF0118A2AAA20072AFAB /* InfoPlist.strings in Resources */,
 				9655AFCC18A33622000960E9 /* Button1Sel.png in Resources */,
+				96C29BF918A3A5A10034DA75 /* joystick.png in Resources */,
 				96A5CF1418A2AAA20072AFAB /* Images.xcassets in Resources */,
 				96A5CF0A18A2AAA20072AFAB /* Main.storyboard in Resources */,
 				9655AFCD18A33622000960E9 /* Button2.png in Resources */,
 				9655AFCF18A33622000960E9 /* Button3.png in Resources */,
+				96C29BF818A3A5A10034DA75 /* dpad.png in Resources */,
 				9655AFD018A33622000960E9 /* Button3Sel.png in Resources */,
 				9655AFCB18A33622000960E9 /* Button1.png in Resources */,
 				9655AFCE18A33622000960E9 /* Button2Sel.png in Resources */,
@@ -346,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A5CF4318A2B44D0072AFAB /* JPJoy2Button.m in Sources */,
+				96C29BF518A3A57E0034DA75 /* Joystick.m in Sources */,
 				9655AFC318A3342C000960E9 /* SKButton.m in Sources */,
 				96A5CF1018A2AAA20072AFAB /* JPMyScene.m in Sources */,
 				96A5CF0718A2AAA20072AFAB /* JPAppDelegate.m in Sources */,
@@ -355,7 +364,6 @@
 				96A5CF3F18A2B21B0072AFAB /* JPControlLayout.m in Sources */,
 				9655AFD318A345C3000960E9 /* SKButton+JPButton.m in Sources */,
 				96A5CF0318A2AAA20072AFAB /* main.m in Sources */,
-				96A5CF3818A2AE180072AFAB /* JCJoystick.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,10 +45,10 @@
     }
 }
 
--(JCJoystick*)createJoysticWithName:(NSString*)name
+-(Joystick*)createDefaultJoystick
 {
-    JCJoystick* joystick = [[JCJoystick alloc] initWithControlRadius:40 baseRadius:45 baseColor:[SKColor blueColor] joystickRadius:25 joystickColor:[SKColor redColor]];
-    [joystick setName:name];
+    Joystick* joystick = [Joystick joystickWithThumb:[SKSpriteNode spriteNodeWithImageNamed:@"joystick.png"] andBackdrop:[SKSpriteNode spriteNodeWithImageNamed:@"dpad.png"]];
+    joystick.position = CGPointMake(70, 70);
     return joystick;
 }
 

@@ -14,9 +14,8 @@
 -(id)initWithSize:(CGSize)size
 {
     if(self = [super initWithSize:size]){
-        self.joystick = [self createJoysticWithName:@"joystick"];
-        [self.joystick setPosition:CGPointMake(70,70)];
-        [self.controllers addObject:joystick];
+        self.joystick = [self createDefaultJoystick];
+        [self.controllers addObject:self.joystick];
         [self addChild:self.joystick];
         
         self.buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
