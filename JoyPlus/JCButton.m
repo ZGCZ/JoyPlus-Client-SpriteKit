@@ -115,4 +115,11 @@
     return NO;
 
 }
+
+-(NSString*)getStat
+{
+    NSString* stat = self.name;
+    //return stat
+    return stat;
+}
 @end

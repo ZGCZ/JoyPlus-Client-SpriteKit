@@ -113,4 +113,11 @@
         self.y = 0;
     }
 }
+
+-(NSString*)getStat
+{
+    NSString* stat = self.name;
+    //return stat
+    return stat;
+}
 @end

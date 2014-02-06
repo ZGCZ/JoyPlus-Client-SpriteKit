@@ -7,8 +7,9 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "JPController.h"
 
-@interface JCJoystick : SKShapeNode
+@interface JCJoystick : SKShapeNode<JPController>
 {
     
     

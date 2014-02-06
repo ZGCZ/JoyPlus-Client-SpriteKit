@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9655AFC018A32CAE000960E9 /* JPController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPController.h; sourceTree = "<group>"; };
 		96A5CEF118A2AAA20072AFAB /* JoyPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A5CEF418A2AAA20072AFAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96A5CEF618A2AAA20072AFAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -186,6 +187,7 @@
 		96A5CF3918A2AE220072AFAB /* JCInput */ = {
 			isa = PBXGroup;
 			children = (
+				9655AFC018A32CAE000960E9 /* JPController.h */,
 				96A5CF3318A2AE180072AFAB /* JCButton.h */,
 				96A5CF3418A2AE180072AFAB /* JCButton.m */,
 				96A5CF3518A2AE180072AFAB /* JCJoystick.h */,
@@ -525,6 +527,7 @@
 				96A5CF2C18A2AAA20072AFAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96A5CF2D18A2AAA20072AFAB /* Build configuration list for PBXNativeTarget "JoyPlusTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +536,7 @@
 				96A5CF2F18A2AAA20072AFAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

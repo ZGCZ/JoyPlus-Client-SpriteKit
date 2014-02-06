@@ -7,8 +7,9 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "JPController.h"
 
-@interface JCButton : SKShapeNode
+@interface JCButton : SKShapeNode<JPController>
 {
     
     

@@ -8,6 +8,7 @@
 
 #import "JPControlLayout.h"
 #import "JPMyScene.h"
+#import "JPController.h"
 
 @implementation JPControlLayout
 @synthesize controllers;
@@ -61,8 +62,11 @@
 
 -(NSString*)getAllControllerStat
 {
-    NSString *stat = @"";
-    //get all object stat;
+    NSMutableString *stat = [NSMutableString stringWithString:@""];
+    for (id <JPController> controller in controllers) {
+        [stat appendString:[controller getStat]];
+        [stat appendString:@" "];
+    }
     return stat;
 }
 
