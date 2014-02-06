@@ -145,6 +145,8 @@
         if (CGRectContainsPoint(self.frame, touchPoint)) {
             [self setIsSelected:YES];
         } else {
+            if([self isSelected])
+                objc_msgSend(_targetTouchUp, _actionTouchUp);
             [self setIsSelected:NO];
         }
     }
@@ -161,8 +163,9 @@
     if ([self isEnabled] && CGRectContainsPoint(self.frame, touchPoint)) {
         objc_msgSend(_targetTouchUpInside, _actionTouchUpInside);
     }
+    if([self isSelected])
+        objc_msgSend(_targetTouchUp, _actionTouchUp);
     [self setIsSelected:NO];
-    objc_msgSend(_targetTouchUp, _actionTouchUp);
 }
 
 -(NSString*)getStat
