@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Ciel Breiz. All rights reserved.
 //
 
-#import "JPButton.h"
+#import "SKButton.h"
 #import <objc/message.h>
 
 
-@implementation JPButton
+@implementation SKButton
 
 #pragma mark Texture Initializer
 

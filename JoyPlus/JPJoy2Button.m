@@ -19,13 +19,15 @@
         [self.controllers addObject:joystick];
         [self addChild:self.joystick];
         
-        self.buttonOne = [[JPButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
+        self.buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
         [self.buttonOne setPosition:CGPointMake(size.width - 40, 95)];
+        [self.buttonOne link];
         [self.controllers addObject:self.buttonOne];
         [self addChild:self.buttonOne];
         
-        self.buttonTwo = [[JPButton alloc] initWithImageNamedNormal:@"Button2.png" selected:@"Button2Sel.png"];
+        self.buttonTwo = [[SKButton alloc] initWithImageNamedNormal:@"Button2.png" selected:@"Button2Sel.png"];
         [self.buttonTwo setPosition:CGPointMake(size.width - 85, 50)];
+        [self.buttonTwo link];
         [self.controllers addObject:self.buttonTwo];
         [self addChild:self.buttonTwo];
     }

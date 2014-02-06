@@ -9,7 +9,7 @@
 #import <SpriteKit/SpriteKit.h>
 #import "JPController.h"
 
-@interface JPButton : SKSpriteNode<JPController>
+@interface SKButton : SKSpriteNode<JPController>
 
 @property (nonatomic, readonly) SEL actionTouchUpInside;
 @property (nonatomic, readonly) SEL actionTouchDown;

@@ -8,7 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "JCJoystick.h"
-#import "JPButton.h"
+#import "SKButton+JPButton.h"
 
 @interface JPControlLayout : SKScene
 
