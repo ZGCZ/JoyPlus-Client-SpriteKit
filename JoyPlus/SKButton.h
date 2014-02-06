@@ -11,6 +11,7 @@
 
 @interface SKButton : SKSpriteNode<JPController>
 
+@property (nonatomic, strong) NSString *tag;
 @property (nonatomic, readonly) SEL actionTouchUpInside;
 @property (nonatomic, readonly) SEL actionTouchDown;
 @property (nonatomic, readonly) SEL actionTouchUp;

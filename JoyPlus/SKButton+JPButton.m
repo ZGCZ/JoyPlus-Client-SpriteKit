@@ -18,12 +18,12 @@
 
 -(void)buttonPressed
 {
-    NSLog(@"Button Pressed");
+    NSLog(@"Button %@ Pressed", self.tag);
 }
 
 -(void)buttonReleased
 {
-    NSLog(@"Button Released");
+    NSLog(@"Button %@ Released", self.tag);
 }
 
 @end

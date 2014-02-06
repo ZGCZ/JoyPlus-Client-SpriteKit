@@ -11,7 +11,7 @@
 
 
 @implementation SKButton
-
+@synthesize tag;
 #pragma mark Texture Initializer
 
 /**
