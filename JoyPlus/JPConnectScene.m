@@ -11,6 +11,12 @@
 #import "JPJoy2Button.h"
 #import "JPJoy3Button.h"
 
+@interface JPConnectScene ()
+
+-(NSString*)informationJSONString;
+
+@end
+
 @implementation JPConnectScene
 
 
@@ -39,6 +45,11 @@
     return self;
 }
 
+-(NSString*)informationJSONString
+{
+    return @"{\"type\": \"Joy2Button\"}";
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
@@ -55,11 +66,28 @@
     }
     
     if ([node.name isEqualToString:@"next"]) {
+        NSError *error = nil;
+        NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[[self informationJSONString] dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:&error];
+        
+        //connect to server
+        //todo
+        
+        //push scene
+        NSString *type = [result objectForKey:@"type"];
+        NSLog(@"Type is %@", type);
         SKView * skView = (SKView *)self.view;
-        NSLog(@"Connect. Going to ControlScene");
-        SKScene * scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
-        scene.scaleMode = SKSceneScaleModeAspectFill;
-        [skView presentScene:scene];
+        SKScene *scene = nil;
+        if([type isEqual:@"Joy2Button"]){
+            scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
+        }
+        else if ([type isEqual:@"Joy3Button"]){
+            scene = [JPJoy3Button sceneWithSize:skView.bounds.size];
+        }
+        if(scene){
+            scene.scaleMode = SKSceneScaleModeAspectFill;
+            [skView presentScene:scene];
+            NSLog(@"Connect. Going to ControlScene");
+        }
     }
 }
 
