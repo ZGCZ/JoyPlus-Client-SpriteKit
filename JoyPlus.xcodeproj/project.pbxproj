@@ -39,6 +39,7 @@
 		96C29BF818A3A5A10034DA75 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C29BF618A3A5A10034DA75 /* dpad.png */; };
 		96C29BF918A3A5A10034DA75 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C29BF718A3A5A10034DA75 /* joystick.png */; };
 		96C29BFF18A3AD8D0034DA75 /* Joystick.md in Resources */ = {isa = PBXBuildFile; fileRef = 96C29BFE18A3AD8D0034DA75 /* Joystick.md */; };
+		96C29C0618A3E81E0034DA75 /* JPCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C29C0518A3E81E0034DA75 /* JPCompatibility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,8 @@
 		96C29BF618A3A5A10034DA75 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dpad.png; sourceTree = "<group>"; };
 		96C29BF718A3A5A10034DA75 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick.png; sourceTree = "<group>"; };
 		96C29BFE18A3AD8D0034DA75 /* Joystick.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Joystick.md; sourceTree = "<group>"; };
+		96C29C0418A3E81E0034DA75 /* JPCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCompatibility.h; sourceTree = "<group>"; };
+		96C29C0518A3E81E0034DA75 /* JPCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCompatibility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 				96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */,
 				96A5CF4418A2B8C30072AFAB /* JPJoy3Button.h */,
 				96A5CF4518A2B8C30072AFAB /* JPJoy3Button.m */,
+				96C29C0418A3E81E0034DA75 /* JPCompatibility.h */,
+				96C29C0518A3E81E0034DA75 /* JPCompatibility.m */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				96A5CF3C18A2B0190072AFAB /* JPConnectScene.m in Sources */,
 				96A5CF0D18A2AAA20072AFAB /* JPViewController.m in Sources */,
 				96A5CF4618A2B8C30072AFAB /* JPJoy3Button.m in Sources */,
+				96C29C0618A3E81E0034DA75 /* JPCompatibility.m in Sources */,
 				96A5CF3F18A2B21B0072AFAB /* JPControlLayout.m in Sources */,
 				9655AFD318A345C3000960E9 /* SKButton+JPButton.m in Sources */,
 				96A5CF0318A2AAA20072AFAB /* main.m in Sources */,

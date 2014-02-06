@@ -9,6 +9,12 @@
 #import "JPControlLayout.h"
 #import "JPMyScene.h"
 
+@interface JPControlLayout (){
+    char t;
+}
+
+@end
+
 @implementation JPControlLayout
 @synthesize controllers;
 
@@ -25,6 +31,7 @@
         [self addChild:back];
         
         controllers = [[NSMutableArray alloc] initWithCapacity:5];
+        t = 'A';
     }
     return self;
 }
@@ -54,7 +61,6 @@
 
 -(SKButton*)createButton
 {
-    static char t = 'A';
     NSString* tag = [NSString stringWithFormat:@"%c", t];
     SKButton *buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
     buttonOne.tag = tag;
