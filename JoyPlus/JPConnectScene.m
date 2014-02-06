@@ -57,7 +57,7 @@
     if ([node.name isEqualToString:@"next"]) {
         SKView * skView = (SKView *)self.view;
         NSLog(@"Connect. Going to ControlScene");
-        SKScene * scene = [JPJoy3Button sceneWithSize:skView.bounds.size];
+        SKScene * scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         [skView presentScene:scene];
     }

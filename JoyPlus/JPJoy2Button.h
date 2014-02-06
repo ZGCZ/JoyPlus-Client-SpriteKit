@@ -11,7 +11,7 @@
 @interface JPJoy2Button : JPControlLayout
 
 @property (strong, nonatomic) JCJoystick *joystick;
-@property (strong, nonatomic) JCButton *buttonRed;
-@property (strong, nonatomic) JCButton *buttonYellow;
+@property (strong, nonatomic) JPButton *buttonOne;
+@property (strong, nonatomic) JPButton *buttonTwo;
 
 @end

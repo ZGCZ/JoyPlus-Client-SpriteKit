@@ -8,7 +8,6 @@
 
 #import "JPControlLayout.h"
 #import "JPMyScene.h"
-#import "JPController.h"
 
 @implementation JPControlLayout
 @synthesize controllers;
@@ -46,13 +45,6 @@
     }
 }
 
--(JCButton*)createButtonWithColor:(SKColor*)color andName:(NSString*)name
-{
-    JCButton* button = [[JCButton alloc] initWithButtonRadius:25 color:color pressedColor:[SKColor blackColor] isTurbo:NO];
-    [button setName:name];
-    return button;
-}
-
 -(JCJoystick*)createJoysticWithName:(NSString*)name
 {
     JCJoystick* joystick = [[JCJoystick alloc] initWithControlRadius:40 baseRadius:45 baseColor:[SKColor blueColor] joystickRadius:25 joystickColor:[SKColor redColor]];
@@ -71,7 +63,7 @@
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-    NSLog(@"Now pusing stat: %@", [self getAllControllerStat]);
+    //NSLog(@"Now pusing stat: %@", [self getAllControllerStat]);
 }
 
 @end

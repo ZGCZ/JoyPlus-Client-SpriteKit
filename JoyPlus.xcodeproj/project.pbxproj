@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9655AFC318A3342C000960E9 /* JPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655AFC218A3342C000960E9 /* JPButton.m */; };
+		9655AFCB18A33622000960E9 /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC518A33622000960E9 /* Button1.png */; };
+		9655AFCC18A33622000960E9 /* Button1Sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC618A33622000960E9 /* Button1Sel.png */; };
+		9655AFCD18A33622000960E9 /* Button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC718A33622000960E9 /* Button2.png */; };
+		9655AFCE18A33622000960E9 /* Button2Sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC818A33622000960E9 /* Button2Sel.png */; };
+		9655AFCF18A33622000960E9 /* Button3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC918A33622000960E9 /* Button3.png */; };
+		9655AFD018A33622000960E9 /* Button3Sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFCA18A33622000960E9 /* Button3Sel.png */; };
 		96A5CEF518A2AAA20072AFAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF418A2AAA20072AFAB /* Foundation.framework */; };
 		96A5CEF718A2AAA20072AFAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF618A2AAA20072AFAB /* CoreGraphics.framework */; };
 		96A5CEF918A2AAA20072AFAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF818A2AAA20072AFAB /* UIKit.framework */; };
@@ -23,7 +30,6 @@
 		96A5CF1D18A2AAA20072AFAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF818A2AAA20072AFAB /* UIKit.framework */; };
 		96A5CF2518A2AAA20072AFAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96A5CF2318A2AAA20072AFAB /* InfoPlist.strings */; };
 		96A5CF2718A2AAA20072AFAB /* JoyPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF2618A2AAA20072AFAB /* JoyPlusTests.m */; };
-		96A5CF3718A2AE180072AFAB /* JCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3418A2AE180072AFAB /* JCButton.m */; };
 		96A5CF3818A2AE180072AFAB /* JCJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3618A2AE180072AFAB /* JCJoystick.m */; };
 		96A5CF3C18A2B0190072AFAB /* JPConnectScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3B18A2B0190072AFAB /* JPConnectScene.m */; };
 		96A5CF3F18A2B21B0072AFAB /* JPControlLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 96A5CF3E18A2B21B0072AFAB /* JPControlLayout.m */; };
@@ -43,6 +49,14 @@
 
 /* Begin PBXFileReference section */
 		9655AFC018A32CAE000960E9 /* JPController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPController.h; sourceTree = "<group>"; };
+		9655AFC118A3342C000960E9 /* JPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPButton.h; sourceTree = "<group>"; };
+		9655AFC218A3342C000960E9 /* JPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPButton.m; sourceTree = "<group>"; };
+		9655AFC518A33622000960E9 /* Button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1.png; sourceTree = "<group>"; };
+		9655AFC618A33622000960E9 /* Button1Sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1Sel.png; sourceTree = "<group>"; };
+		9655AFC718A33622000960E9 /* Button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button2.png; sourceTree = "<group>"; };
+		9655AFC818A33622000960E9 /* Button2Sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button2Sel.png; sourceTree = "<group>"; };
+		9655AFC918A33622000960E9 /* Button3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button3.png; sourceTree = "<group>"; };
+		9655AFCA18A33622000960E9 /* Button3Sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button3Sel.png; sourceTree = "<group>"; };
 		96A5CEF118A2AAA20072AFAB /* JoyPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A5CEF418A2AAA20072AFAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96A5CEF618A2AAA20072AFAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,8 +79,6 @@
 		96A5CF2218A2AAA20072AFAB /* JoyPlusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JoyPlusTests-Info.plist"; sourceTree = "<group>"; };
 		96A5CF2418A2AAA20072AFAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96A5CF2618A2AAA20072AFAB /* JoyPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JoyPlusTests.m; sourceTree = "<group>"; };
-		96A5CF3318A2AE180072AFAB /* JCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCButton.h; sourceTree = "<group>"; };
-		96A5CF3418A2AE180072AFAB /* JCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCButton.m; sourceTree = "<group>"; };
 		96A5CF3518A2AE180072AFAB /* JCJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCJoystick.h; sourceTree = "<group>"; };
 		96A5CF3618A2AE180072AFAB /* JCJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCJoystick.m; sourceTree = "<group>"; };
 		96A5CF3A18A2B0190072AFAB /* JPConnectScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPConnectScene.h; sourceTree = "<group>"; };
@@ -104,9 +116,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9655AFC418A33622000960E9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9655AFC518A33622000960E9 /* Button1.png */,
+				9655AFC618A33622000960E9 /* Button1Sel.png */,
+				9655AFC718A33622000960E9 /* Button2.png */,
+				9655AFC818A33622000960E9 /* Button2Sel.png */,
+				9655AFC918A33622000960E9 /* Button3.png */,
+				9655AFCA18A33622000960E9 /* Button3Sel.png */,
+			);
+			name = Images;
+			path = JoyPlus/Images;
+			sourceTree = "<group>";
+		};
 		96A5CEE818A2AAA20072AFAB = {
 			isa = PBXGroup;
 			children = (
+				9655AFC418A33622000960E9 /* Images */,
 				96A5CEFC18A2AAA20072AFAB /* JoyPlus */,
 				96A5CF2018A2AAA20072AFAB /* JoyPlusTests */,
 				96A5CEF318A2AAA20072AFAB /* Frameworks */,
@@ -138,7 +165,7 @@
 		96A5CEFC18A2AAA20072AFAB /* JoyPlus */ = {
 			isa = PBXGroup;
 			children = (
-				96A5CF3918A2AE220072AFAB /* JCInput */,
+				96A5CF3918A2AE220072AFAB /* JPController */,
 				96A5CF0518A2AAA20072AFAB /* JPAppDelegate.h */,
 				96A5CF0618A2AAA20072AFAB /* JPAppDelegate.m */,
 				96A5CF0818A2AAA20072AFAB /* Main.storyboard */,
@@ -184,16 +211,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		96A5CF3918A2AE220072AFAB /* JCInput */ = {
+		96A5CF3918A2AE220072AFAB /* JPController */ = {
 			isa = PBXGroup;
 			children = (
 				9655AFC018A32CAE000960E9 /* JPController.h */,
-				96A5CF3318A2AE180072AFAB /* JCButton.h */,
-				96A5CF3418A2AE180072AFAB /* JCButton.m */,
 				96A5CF3518A2AE180072AFAB /* JCJoystick.h */,
 				96A5CF3618A2AE180072AFAB /* JCJoystick.m */,
+				9655AFC118A3342C000960E9 /* JPButton.h */,
+				9655AFC218A3342C000960E9 /* JPButton.m */,
 			);
-			name = JCInput;
+			name = JPController;
 			sourceTree = "<group>";
 		};
 		96A5CF4018A2B22C0072AFAB /* Layout */ = {
@@ -287,8 +314,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A5CF0118A2AAA20072AFAB /* InfoPlist.strings in Resources */,
+				9655AFCC18A33622000960E9 /* Button1Sel.png in Resources */,
 				96A5CF1418A2AAA20072AFAB /* Images.xcassets in Resources */,
 				96A5CF0A18A2AAA20072AFAB /* Main.storyboard in Resources */,
+				9655AFCD18A33622000960E9 /* Button2.png in Resources */,
+				9655AFCF18A33622000960E9 /* Button3.png in Resources */,
+				9655AFD018A33622000960E9 /* Button3Sel.png in Resources */,
+				9655AFCB18A33622000960E9 /* Button1.png in Resources */,
+				9655AFCE18A33622000960E9 /* Button2Sel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A5CF4318A2B44D0072AFAB /* JPJoy2Button.m in Sources */,
-				96A5CF3718A2AE180072AFAB /* JCButton.m in Sources */,
+				9655AFC318A3342C000960E9 /* JPButton.m in Sources */,
 				96A5CF1018A2AAA20072AFAB /* JPMyScene.m in Sources */,
 				96A5CF0718A2AAA20072AFAB /* JPAppDelegate.m in Sources */,
 				96A5CF3C18A2B0190072AFAB /* JPConnectScene.m in Sources */,

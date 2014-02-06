@@ -9,7 +9,7 @@
 #import "JPJoy2Button.h"
 
 @implementation JPJoy2Button
-@synthesize joystick, buttonRed, buttonYellow;
+@synthesize joystick, buttonOne, buttonTwo;
 
 -(id)initWithSize:(CGSize)size
 {
@@ -19,17 +19,22 @@
         [self.controllers addObject:joystick];
         [self addChild:self.joystick];
         
-        self.buttonRed = [self createButtonWithColor:[SKColor redColor] andName:@"buttonRed"];
-        [self.buttonRed setPosition:CGPointMake(size.width - 40,95)];
-        [self.controllers addObject:buttonRed];
-        [self addChild:self.buttonRed];
+        self.buttonOne = [[JPButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
+        [self.buttonOne setPosition:CGPointMake(size.width - 40, 95)];
+        [self.controllers addObject:self.buttonOne];
+        [self addChild:self.buttonOne];
         
-        self.buttonYellow = [self createButtonWithColor:[SKColor yellowColor] andName:@"buttonYellow"];
-        [self.buttonYellow setPosition:CGPointMake(size.width - 85,50)];
-        [self.controllers addObject:buttonYellow];
-        [self addChild:self.buttonYellow];
+        self.buttonTwo = [[JPButton alloc] initWithImageNamedNormal:@"Button2.png" selected:@"Button2Sel.png"];
+        [self.buttonTwo setPosition:CGPointMake(size.width - 85, 50)];
+        [self.controllers addObject:self.buttonTwo];
+        [self addChild:self.buttonTwo];
     }
     return self;
+}
+
+-(void)buttonAction
+{
+    NSLog(@"Test");
 }
     
 @end

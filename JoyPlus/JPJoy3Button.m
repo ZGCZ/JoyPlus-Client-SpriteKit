@@ -9,7 +9,7 @@
 #import "JPJoy3Button.h"
 
 @implementation JPJoy3Button
-@synthesize joystick, buttonRed, buttonYellow, buttonBlue;
+@synthesize joystick, buttonOne, buttonTwo, buttonThree;
 
 -(id)initWithSize:(CGSize)size
 {
@@ -19,20 +19,20 @@
         [self.controllers addObject:joystick];
         [self addChild:self.joystick];
         
-        self.buttonRed = [self createButtonWithColor:[SKColor redColor] andName:@"buttonRed"];
-        [self.buttonRed setPosition:CGPointMake(size.width - 40,150)];
-        [self.controllers addObject:buttonRed];
-        [self addChild:self.buttonRed];
+        self.buttonOne = [[JPButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
+        [self.buttonOne setPosition:CGPointMake(size.width - 40, 150)];
+        [self.controllers addObject:self.buttonOne];
+        [self addChild:self.buttonOne];
         
-        self.buttonYellow = [self createButtonWithColor:[SKColor yellowColor] andName:@"buttonYellow"];
-        [self.buttonYellow setPosition:CGPointMake(size.width - 90,120)];
-        [self.controllers addObject:buttonYellow];
-        [self addChild:self.buttonYellow];
+        self.buttonTwo = [[JPButton alloc] initWithImageNamedNormal:@"Button2.png" selected:@"Button2Sel.png"];
+        [self.buttonTwo setPosition:CGPointMake(size.width - 90, 120)];
+        [self.controllers addObject:self.buttonTwo];
+        [self addChild:self.buttonTwo];
         
-        self.buttonBlue = [self createButtonWithColor:[SKColor blueColor] andName:@"buttonBlue"];
-        [self.buttonBlue setPosition:CGPointMake(size.width - 140,90)];
-        [self.controllers addObject:buttonBlue];
-        [self addChild:self.buttonBlue];
+        self.buttonThree = [[JPButton alloc] initWithImageNamedNormal:@"Button3.png" selected:@"Button3Sel.png"];
+        [self.buttonThree setPosition:CGPointMake(size.width - 140, 90)];
+        [self.controllers addObject:self.buttonThree];
+        [self addChild:self.buttonThree];
     }
     return self;
 }
