@@ -23,21 +23,19 @@
         moveMe.text = @"Move me";
         moveMe.fontSize = 15;
         moveMe.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
-        [self addChild:moveMe];
         
         self.joystick = [self createDefaultJoystick];
         [self.controllers addObject:self.joystick];
-        [self addChild:self.joystick];
         
         self.buttonOne = [self createButton];
         [self.buttonOne setPosition:CGPointMake(size.width - 40, 95)];
         [self.controllers addObject:self.buttonOne];
-        [self addChild:self.buttonOne];
         
         self.buttonTwo = [self createButton];
         [self.buttonTwo setPosition:CGPointMake(size.width - 85, 50)];
         [self.controllers addObject:self.buttonTwo];
-        [self addChild:self.buttonTwo];
+        
+        [self drawController];
     }
     return self;
 }

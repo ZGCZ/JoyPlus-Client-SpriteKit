@@ -52,6 +52,14 @@
     }
 }
 
+-(void)drawController
+{
+    [self removeChildrenInArray:controllers];
+    for (id controller in controllers) {
+        [self addChild:controller];
+    }
+}
+
 -(Joystick*)createDefaultJoystick
 {
     Joystick* joystick = [Joystick joystickWithThumb:[SKSpriteNode spriteNodeWithImageNamed:@"joystick.png"] andBackdrop:[SKSpriteNode spriteNodeWithImageNamed:@"dpad.png"]];

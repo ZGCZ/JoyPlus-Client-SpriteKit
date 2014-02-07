@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) NSMutableArray *controllers;
 
+-(void)drawController;
 -(Joystick*)createDefaultJoystick;
 -(SKButton*)createButton;
 -(SKButton*)createButtonWithTitle:(NSString*)title andTag:(NSString*)tag;

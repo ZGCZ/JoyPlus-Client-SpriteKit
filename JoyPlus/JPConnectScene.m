@@ -48,7 +48,7 @@
 
 -(NSString*)informationJSONString
 {
-    return @"{\"type\": \"JPCompatibility\"}";
+    return @"{\"type\": \"Joy2Button\"}";
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
