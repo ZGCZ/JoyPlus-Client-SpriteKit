@@ -11,6 +11,7 @@
 		9655AFCB18A33622000960E9 /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC518A33622000960E9 /* Button1.png */; };
 		9655AFCC18A33622000960E9 /* Button1Sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC618A33622000960E9 /* Button1Sel.png */; };
 		9655AFD318A345C3000960E9 /* SKButton+JPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655AFD218A345C3000960E9 /* SKButton+JPButton.m */; };
+		9674552C18A876F7005C881E /* JPDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674552B18A876F7005C881E /* JPDrag.m */; };
 		96A5CEF518A2AAA20072AFAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF418A2AAA20072AFAB /* Foundation.framework */; };
 		96A5CEF718A2AAA20072AFAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF618A2AAA20072AFAB /* CoreGraphics.framework */; };
 		96A5CEF918A2AAA20072AFAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF818A2AAA20072AFAB /* UIKit.framework */; };
@@ -56,6 +57,8 @@
 		9655AFC618A33622000960E9 /* Button1Sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1Sel.png; sourceTree = "<group>"; };
 		9655AFD118A345C3000960E9 /* SKButton+JPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKButton+JPButton.h"; sourceTree = "<group>"; };
 		9655AFD218A345C3000960E9 /* SKButton+JPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKButton+JPButton.m"; sourceTree = "<group>"; };
+		9674552A18A876F7005C881E /* JPDrag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDrag.h; sourceTree = "<group>"; };
+		9674552B18A876F7005C881E /* JPDrag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDrag.m; sourceTree = "<group>"; };
 		96A5CEF118A2AAA20072AFAB /* JoyPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JoyPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A5CEF418A2AAA20072AFAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96A5CEF618A2AAA20072AFAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -237,6 +240,8 @@
 				96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */,
 				96A5CF4418A2B8C30072AFAB /* JPJoy3Button.h */,
 				96A5CF4518A2B8C30072AFAB /* JPJoy3Button.m */,
+				9674552A18A876F7005C881E /* JPDrag.h */,
+				9674552B18A876F7005C881E /* JPDrag.m */,
 				96C29C0418A3E81E0034DA75 /* JPCompatibility.h */,
 				96C29C0518A3E81E0034DA75 /* JPCompatibility.m */,
 			);
@@ -358,6 +363,7 @@
 				96C29BF518A3A57E0034DA75 /* Joystick.m in Sources */,
 				9655AFC318A3342C000960E9 /* SKButton.m in Sources */,
 				96A5CF1018A2AAA20072AFAB /* JPMyScene.m in Sources */,
+				9674552C18A876F7005C881E /* JPDrag.m in Sources */,
 				96A5CF0718A2AAA20072AFAB /* JPAppDelegate.m in Sources */,
 				96A5CF3C18A2B0190072AFAB /* JPConnectScene.m in Sources */,
 				96A5CF0D18A2AAA20072AFAB /* JPViewController.m in Sources */,

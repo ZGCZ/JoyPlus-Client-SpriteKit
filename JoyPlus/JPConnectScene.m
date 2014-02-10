@@ -10,6 +10,7 @@
 #import "JPMyScene.h"
 #import "JPJoy2Button.h"
 #import "JPJoy3Button.h"
+#import "JPDrag.h"
 #import "JPCompatibility.h"
 
 @interface JPConnectScene ()
@@ -48,7 +49,7 @@
 
 -(NSString*)informationJSONString
 {
-    return @"{\"type\": \"Joy2Button\"}";
+    return @"{\"type\": \"JPDrag\"}";
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -83,6 +84,9 @@
         }
         else if ([type isEqual:@"Joy3Button"]){
             scene = [JPJoy3Button sceneWithSize:skView.bounds.size];
+        }
+        else if ([type isEqual:@"JPDrag"]){
+            scene = [JPDrag sceneWithSize:skView.bounds.size];
         }
         else if ([type isEqual:@"JPCompatibility"]){
             scene = [JPCompatibility sceneWithSize:skView.bounds.size];
