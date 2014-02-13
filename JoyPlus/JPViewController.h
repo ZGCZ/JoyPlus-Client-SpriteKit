@@ -11,4 +11,6 @@
 
 @interface JPViewController : UIViewController
 
+- (void)goToConnectView;
+
 @end

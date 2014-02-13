@@ -9,9 +9,13 @@
 #import "JPMyScene.h"
 #import "JPConnectScene.h"
 
-@implementation JPMyScene
+#import "JPViewController.h"
 
--(id)initWithSize:(CGSize)size {    
+@implementation JPMyScene {
+    JPViewController *jpVC;
+}
+
+-(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
@@ -37,6 +41,11 @@
     return self;
 }
 
+-(void) setController: (JPViewController*) _jpVC
+{
+    jpVC = _jpVC;
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
@@ -50,6 +59,9 @@
         SKScene * scene = [JPConnectScene sceneWithSize:skView.bounds.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         [skView presentScene:scene];
+    } else {
+        NSLog(@"try to go to strange place.");
+        [jpVC goToConnectView];
     }
 }
 

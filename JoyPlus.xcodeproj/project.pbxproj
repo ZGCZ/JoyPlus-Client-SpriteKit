@@ -13,6 +13,7 @@
 		7774B6C718AC939E00D813D7 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774B6C618AC939E00D813D7 /* libicucore.dylib */; };
 		7774B6C918AC93B500D813D7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774B6C818AC93B500D813D7 /* CFNetwork.framework */; };
 		7774B6CB18AC93C100D813D7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774B6CA18AC93C100D813D7 /* Security.framework */; };
+		7774B6CE18AC9B9600D813D7 /* JPConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B6CD18AC9B9600D813D7 /* JPConnectViewController.m */; };
 		9655AFC318A3342C000960E9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655AFC218A3342C000960E9 /* SKButton.m */; };
 		9655AFCB18A33622000960E9 /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC518A33622000960E9 /* Button1.png */; };
 		9655AFCC18A33622000960E9 /* Button1Sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC618A33622000960E9 /* Button1Sel.png */; };
@@ -66,6 +67,8 @@
 		7774B6C618AC939E00D813D7 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		7774B6C818AC93B500D813D7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		7774B6CA18AC93C100D813D7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7774B6CC18AC9B9600D813D7 /* JPConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPConnectViewController.h; sourceTree = "<group>"; };
+		7774B6CD18AC9B9600D813D7 /* JPConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPConnectViewController.m; sourceTree = "<group>"; };
 		9655AFC018A32CAE000960E9 /* JPController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPController.h; sourceTree = "<group>"; };
 		9655AFC118A3342C000960E9 /* SKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKButton.h; sourceTree = "<group>"; };
 		9655AFC218A3342C000960E9 /* SKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKButton.m; sourceTree = "<group>"; };
@@ -214,6 +217,8 @@
 				96A5CF0818A2AAA20072AFAB /* Main.storyboard */,
 				96A5CF0B18A2AAA20072AFAB /* JPViewController.h */,
 				96A5CF0C18A2AAA20072AFAB /* JPViewController.m */,
+				7774B6CC18AC9B9600D813D7 /* JPConnectViewController.h */,
+				7774B6CD18AC9B9600D813D7 /* JPConnectViewController.m */,
 				96A5CF0E18A2AAA20072AFAB /* JPMyScene.h */,
 				96A5CF0F18A2AAA20072AFAB /* JPMyScene.m */,
 				96A5CF3A18A2B0190072AFAB /* JPConnectScene.h */,
@@ -399,6 +404,7 @@
 				7774B6C418AC91BE00D813D7 /* NSData+SRB64Additions.m in Sources */,
 				96A5CF4318A2B44D0072AFAB /* JPJoy2Button.m in Sources */,
 				96C29BF518A3A57E0034DA75 /* Joystick.m in Sources */,
+				7774B6CE18AC9B9600D813D7 /* JPConnectViewController.m in Sources */,
 				7774B6C318AC91BE00D813D7 /* base64.c in Sources */,
 				7774B6C518AC91BE00D813D7 /* SRWebSocket.m in Sources */,
 				9655AFC318A3342C000960E9 /* SKButton.m in Sources */,
