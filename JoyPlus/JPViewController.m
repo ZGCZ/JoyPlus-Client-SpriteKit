@@ -10,12 +10,15 @@
 #import "JPMyScene.h"
 
 #import "JPConnectViewController.h"
+#import "JPViewNavigator.h"
 
 @implementation JPViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [JPViewNavigator setJPViewController:self];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;
@@ -23,23 +26,11 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    JPMyScene * scene = [JPMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [JPMyScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    [scene setController: self];
     
     // Present the scene.
     [skView presentScene:scene];
-}
-
-- (void)goToConnectView
-{
-    // Testing
-    /*
-    JPConnectViewController* newConnectView = [[JPConnectViewController alloc] init];
-    [self presentModalViewController: newConnectView animated:YES];
-     */
-    [self performSegueWithIdentifier:@"goToConnectView" sender:self];
 }
 
 - (BOOL)shouldAutorotate

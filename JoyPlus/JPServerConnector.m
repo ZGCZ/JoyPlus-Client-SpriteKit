@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Ciel Breiz. All rights reserved.
 //
 
-#import "ServerConnector.h"
+#import "JPServerConnector.h"
 #import "SRWebSocket.h"
 
 @implementation ServerConnector

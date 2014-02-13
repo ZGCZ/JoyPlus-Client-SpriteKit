@@ -12,6 +12,4 @@
 
 @interface JPMyScene : SKScene
 
--(void) setController: (JPViewController*)_jpVC;
-
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SpriteKit/SpriteKit.h>
 
 @interface JPConnectViewController : UIViewController
 
 - (IBAction)backButton:(id)sender;
+
+- (void)setSKView: (SKView*) input;
 
 @end

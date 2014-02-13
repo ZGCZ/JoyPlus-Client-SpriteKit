@@ -8,7 +8,12 @@
 
 #import "JPConnectViewController.h"
 
-@implementation JPConnectViewController
+#import "JPViewNavigator.h"
+#import "JPConnectScene.h"
+
+@implementation JPConnectViewController {
+    SKView* skView;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -19,11 +24,17 @@
     return self;
 }
 
+- (void)setSKView: (SKView*) input
+{
+    skView = input;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     NSLog(@"Connect View loaded");
 	// Do any additional setup after loading the view.
+    [JPViewNavigator setJPConnectViewController: self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,7 +45,11 @@
 
 - (IBAction)backButton:(id)sender
 {
-    [self performSegueWithIdentifier:@"goToSKView" sender:self];
+    [JPViewNavigator toMain];
+    NSLog(@"Connect. Going to ConnectScene");
+    SKScene * scene = [JPConnectScene sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+    [skView presentScene:scene];
 }
 
 @end
