@@ -57,9 +57,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <segue destination="LVB-YS-i5n" kind="modal" identifier="goToSKView" id="eTl-aw-pjo"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzY-cI-r3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
