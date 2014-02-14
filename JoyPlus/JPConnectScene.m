@@ -49,7 +49,7 @@
 
 -(NSString*)informationJSONString
 {
-    return @"{\"type\": \"JPDrag\"}";
+    return @"{\"type\": \"Joy2Button\"}";
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

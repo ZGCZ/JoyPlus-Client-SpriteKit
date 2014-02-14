@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7774B6C718AC939E00D813D7 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774B6C618AC939E00D813D7 /* libicucore.dylib */; };
+		7774B6C918AC93B500D813D7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774B6C818AC93B500D813D7 /* CFNetwork.framework */; };
+		7774B6CB18AC93C100D813D7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774B6CA18AC93C100D813D7 /* Security.framework */; };
+		7774B6CE18AC9B9600D813D7 /* JPConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B6CD18AC9B9600D813D7 /* JPConnectViewController.m */; };
+		7774B6D118AD002D00D813D7 /* JPServerConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B6D018AD002D00D813D7 /* JPServerConnector.m */; };
+		7774B72618AD014000D813D7 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 7774B71F18AD014000D813D7 /* base64.c */; };
+		7774B72718AD014000D813D7 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72218AD014000D813D7 /* NSData+SRB64Additions.m */; };
+		7774B72818AD014000D813D7 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72518AD014000D813D7 /* SRWebSocket.m */; };
+		7774B72B18AD1B1300D813D7 /* JPViewNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */; };
 		9655AFC318A3342C000960E9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655AFC218A3342C000960E9 /* SKButton.m */; };
 		9655AFCB18A33622000960E9 /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC518A33622000960E9 /* Button1.png */; };
 		9655AFCC18A33622000960E9 /* Button1Sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC618A33622000960E9 /* Button1Sel.png */; };
@@ -50,6 +59,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7774B6C618AC939E00D813D7 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		7774B6C818AC93B500D813D7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7774B6CA18AC93C100D813D7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7774B6CC18AC9B9600D813D7 /* JPConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPConnectViewController.h; sourceTree = "<group>"; };
+		7774B6CD18AC9B9600D813D7 /* JPConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPConnectViewController.m; sourceTree = "<group>"; };
+		7774B6CF18AD002D00D813D7 /* JPServerConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPServerConnector.h; sourceTree = "<group>"; };
+		7774B6D018AD002D00D813D7 /* JPServerConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPServerConnector.m; sourceTree = "<group>"; };
+		7774B71F18AD014000D813D7 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		7774B72018AD014000D813D7 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		7774B72118AD014000D813D7 /* NSData+SRB64Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SRB64Additions.h"; sourceTree = "<group>"; };
+		7774B72218AD014000D813D7 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
+		7774B72318AD014000D813D7 /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		7774B72418AD014000D813D7 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		7774B72518AD014000D813D7 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		7774B72918AD1B1300D813D7 /* JPViewNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPViewNavigator.h; sourceTree = "<group>"; };
+		7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPViewNavigator.m; sourceTree = "<group>"; };
 		9655AFC018A32CAE000960E9 /* JPController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPController.h; sourceTree = "<group>"; };
 		9655AFC118A3342C000960E9 /* SKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKButton.h; sourceTree = "<group>"; };
 		9655AFC218A3342C000960E9 /* SKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKButton.m; sourceTree = "<group>"; };
@@ -103,6 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7774B6CB18AC93C100D813D7 /* Security.framework in Frameworks */,
+				7774B6C918AC93B500D813D7 /* CFNetwork.framework in Frameworks */,
+				7774B6C718AC939E00D813D7 /* libicucore.dylib in Frameworks */,
 				96A5CEF718A2AAA20072AFAB /* CoreGraphics.framework in Frameworks */,
 				96A5CEF918A2AAA20072AFAB /* UIKit.framework in Frameworks */,
 				96A5CEFB18A2AAA20072AFAB /* SpriteKit.framework in Frameworks */,
@@ -123,6 +151,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7774B71E18AD014000D813D7 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				7774B71F18AD014000D813D7 /* base64.c */,
+				7774B72018AD014000D813D7 /* base64.h */,
+				7774B72118AD014000D813D7 /* NSData+SRB64Additions.h */,
+				7774B72218AD014000D813D7 /* NSData+SRB64Additions.m */,
+				7774B72318AD014000D813D7 /* SocketRocket-Prefix.pch */,
+				7774B72418AD014000D813D7 /* SRWebSocket.h */,
+				7774B72518AD014000D813D7 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = SOURCE_ROOT;
+		};
 		9655AFC418A33622000960E9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +201,9 @@
 		96A5CEF318A2AAA20072AFAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7774B6CA18AC93C100D813D7 /* Security.framework */,
+				7774B6C818AC93B500D813D7 /* CFNetwork.framework */,
+				7774B6C618AC939E00D813D7 /* libicucore.dylib */,
 				96A5CEF418A2AAA20072AFAB /* Foundation.framework */,
 				96A5CEF618A2AAA20072AFAB /* CoreGraphics.framework */,
 				96A5CEF818A2AAA20072AFAB /* UIKit.framework */,
@@ -171,12 +216,19 @@
 		96A5CEFC18A2AAA20072AFAB /* JoyPlus */ = {
 			isa = PBXGroup;
 			children = (
+				7774B71E18AD014000D813D7 /* SocketRocket */,
 				96A5CF3918A2AE220072AFAB /* JPController */,
 				96A5CF0518A2AAA20072AFAB /* JPAppDelegate.h */,
 				96A5CF0618A2AAA20072AFAB /* JPAppDelegate.m */,
 				96A5CF0818A2AAA20072AFAB /* Main.storyboard */,
+				7774B72918AD1B1300D813D7 /* JPViewNavigator.h */,
+				7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */,
 				96A5CF0B18A2AAA20072AFAB /* JPViewController.h */,
 				96A5CF0C18A2AAA20072AFAB /* JPViewController.m */,
+				7774B6CC18AC9B9600D813D7 /* JPConnectViewController.h */,
+				7774B6CD18AC9B9600D813D7 /* JPConnectViewController.m */,
+				7774B6CF18AD002D00D813D7 /* JPServerConnector.h */,
+				7774B6D018AD002D00D813D7 /* JPServerConnector.m */,
 				96A5CF0E18A2AAA20072AFAB /* JPMyScene.h */,
 				96A5CF0F18A2AAA20072AFAB /* JPMyScene.m */,
 				96A5CF3A18A2B0190072AFAB /* JPConnectScene.h */,
@@ -304,6 +356,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ciel Breiz";
 				TargetAttributes = {
+					96A5CEF018A2AAA20072AFAB = {
+						DevelopmentTeam = S8DJZ39LAZ;
+					};
 					96A5CF1818A2AAA20072AFAB = {
 						TestTargetID = 96A5CEF018A2AAA20072AFAB;
 					};
@@ -360,8 +415,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A5CF4318A2B44D0072AFAB /* JPJoy2Button.m in Sources */,
+				7774B6D118AD002D00D813D7 /* JPServerConnector.m in Sources */,
 				96C29BF518A3A57E0034DA75 /* Joystick.m in Sources */,
+				7774B6CE18AC9B9600D813D7 /* JPConnectViewController.m in Sources */,
+				7774B72718AD014000D813D7 /* NSData+SRB64Additions.m in Sources */,
 				9655AFC318A3342C000960E9 /* SKButton.m in Sources */,
+				7774B72818AD014000D813D7 /* SRWebSocket.m in Sources */,
 				96A5CF1018A2AAA20072AFAB /* JPMyScene.m in Sources */,
 				9674552C18A876F7005C881E /* JPDrag.m in Sources */,
 				96A5CF0718A2AAA20072AFAB /* JPAppDelegate.m in Sources */,
@@ -369,8 +428,10 @@
 				96A5CF0D18A2AAA20072AFAB /* JPViewController.m in Sources */,
 				96A5CF4618A2B8C30072AFAB /* JPJoy3Button.m in Sources */,
 				96C29C0618A3E81E0034DA75 /* JPCompatibility.m in Sources */,
+				7774B72B18AD1B1300D813D7 /* JPViewNavigator.m in Sources */,
 				96A5CF3F18A2B21B0072AFAB /* JPControlLayout.m in Sources */,
 				9655AFD318A345C3000960E9 /* SKButton+JPButton.m in Sources */,
+				7774B72618AD014000D813D7 /* base64.c in Sources */,
 				96A5CF0318A2AAA20072AFAB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,11 +559,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xinzi Zhou (9SPLNQUXA3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyPlus/JoyPlus-Prefix.pch";
 				INFOPLIST_FILE = "JoyPlus/JoyPlus-Info.plist";
+				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -512,11 +579,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xinzi Zhou (9SPLNQUXA3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyPlus/JoyPlus-Prefix.pch";
 				INFOPLIST_FILE = "JoyPlus/JoyPlus-Info.plist";
+				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -9,9 +9,13 @@
 #import "JPMyScene.h"
 #import "JPConnectScene.h"
 
-@implementation JPMyScene
+#import "JPViewNavigator.h"
 
--(id)initWithSize:(CGSize)size {    
+@implementation JPMyScene {
+    JPViewController *jpVC;
+}
+
+-(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
@@ -45,11 +49,16 @@
     
     //if fire button touched, bring the rain
     if ([node.name isEqualToString:@"connect"]) {
+        /*
         SKView * skView = (SKView *)self.view;
         NSLog(@"Connect. Going to ConnectScene");
         SKScene * scene = [JPConnectScene sceneWithSize:skView.bounds.size];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         [skView presentScene:scene];
+         */
+        NSLog(@"try to go to strange place.");
+        [JPViewNavigator toConnect];
+        [[JPViewNavigator jpConnectViewController] setSKView:self.view];
     }
 }
 

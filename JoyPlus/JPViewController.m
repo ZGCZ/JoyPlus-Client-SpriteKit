@@ -9,11 +9,16 @@
 #import "JPViewController.h"
 #import "JPMyScene.h"
 
+#import "JPConnectViewController.h"
+#import "JPViewNavigator.h"
+
 @implementation JPViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [JPViewNavigator setJPViewController:self];
 
     // Configure the view.
     SKView * skView = (SKView *)self.view;

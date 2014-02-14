@@ -8,6 +8,8 @@
 
 #import <SpriteKit/SpriteKit.h>
 
+#import "JPViewController.h"
+
 @interface JPMyScene : SKScene
 
 @end
