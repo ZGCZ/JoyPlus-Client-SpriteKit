@@ -10,6 +10,7 @@
 
 #import "JPViewNavigator.h"
 #import "JPConnectScene.h"
+#import "JPServerConnector.h"
 
 @implementation JPConnectViewController {
     SKView* skView;
@@ -50,6 +51,13 @@
     SKScene * scene = [JPConnectScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     [skView presentScene:scene];
+}
+
+- (IBAction)connectServer:(id)sender
+{
+    NSLog(@"Trying to connect server");
+    JPServerConnector* jpServerConnector = [JPServerConnector instance];
+    [jpServerConnector connectServer:@"127.0.0.1:31415"];
 }
 
 @end

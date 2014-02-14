@@ -9,6 +9,34 @@
 #import "JPServerConnector.h"
 #import "SRWebSocket.h"
 
-@implementation ServerConnector
+@implementation JPServerConnector {
+    SRWebSocket* webSocket;
+}
+
+static JPServerConnector *gInstance = NULL;
+
++ (JPServerConnector *)instance
+{
+    @synchronized(self)
+    {
+        if (gInstance == NULL)
+            gInstance = [[self alloc] init];
+    }
+    
+    return(gInstance);
+}
+
+- (BOOL)connectServer: (NSString*) address
+{
+    NSLog(@"Now connect lol");
+    self.serverAddress = address;
+    NSMutableString* strUrl = [NSMutableString stringWithString:@"ws://"];
+    [strUrl appendString: self.serverAddress];
+    NSURL* url = [NSURL URLWithString:strUrl];
+    NSURLRequest* urlRequest = [NSURLRequest requestWithURL: url];
+    webSocket = [[SRWebSocket alloc] initWithURLRequest: urlRequest];
+    [webSocket open];
+    return YES;
+}
 
 @end

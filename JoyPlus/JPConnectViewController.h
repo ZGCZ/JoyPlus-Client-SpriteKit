@@ -13,6 +13,8 @@
 
 - (IBAction)backButton:(id)sender;
 
+- (IBAction)connectServer:(id)sender;
+
 - (void)setSKView: (SKView*) input;
 
 @end

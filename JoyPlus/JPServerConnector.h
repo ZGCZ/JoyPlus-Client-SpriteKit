@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ServerConnector : NSObject
+@interface JPServerConnector : NSObject
+
+@property NSString* serverAddress;
+
++ (JPServerConnector*)instance;
+- (BOOL)connectServer: (NSString*) address;
 
 @end
