@@ -91,16 +91,6 @@
     return buttonOne;
 }
 
--(NSString*)getAllControllerStat
-{
-    NSMutableString *stat = [NSMutableString stringWithString:@""];
-    for (id <JPController> controller in controllers) {
-        [stat appendString:[controller getStat]];
-        [stat appendString:@" "];
-    }
-    return stat;
-}
-
 -(void)update:(CFTimeInterval)currentTime {
     //NSLog(@"Now pusing stat: %@", [self getAllControllerStat]);
 }

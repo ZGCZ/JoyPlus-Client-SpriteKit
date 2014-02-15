@@ -84,7 +84,6 @@
 		964553C118AF51540001D899 /* Joystick+JPJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Joystick+JPJoystick.m"; sourceTree = "<group>"; };
 		964553C318AF51D50001D899 /* JPMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPMotion.h; sourceTree = "<group>"; };
 		964553C418AF51D50001D899 /* JPMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPMotion.m; sourceTree = "<group>"; };
-		9655AFC018A32CAE000960E9 /* JPController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPController.h; sourceTree = "<group>"; };
 		9655AFC118A3342C000960E9 /* SKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKButton.h; sourceTree = "<group>"; };
 		9655AFC218A3342C000960E9 /* SKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKButton.m; sourceTree = "<group>"; };
 		9655AFC518A33622000960E9 /* Button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1.png; sourceTree = "<group>"; };
@@ -289,7 +288,6 @@
 		96A5CF3918A2AE220072AFAB /* JPController */ = {
 			isa = PBXGroup;
 			children = (
-				9655AFC018A32CAE000960E9 /* JPController.h */,
 				96C29BF318A3A57E0034DA75 /* Joystick.h */,
 				96C29BF418A3A57E0034DA75 /* Joystick.m */,
 				964553C018AF51540001D899 /* Joystick+JPJoystick.h */,

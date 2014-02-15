@@ -168,9 +168,4 @@
     [self setIsSelected:NO];
 }
 
--(NSString*)getStat
-{
-    return @"";
-}
-
 @end
