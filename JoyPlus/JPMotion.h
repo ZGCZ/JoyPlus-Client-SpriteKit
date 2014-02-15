@@ -1,16 +1,13 @@
 //
-//  JPAccelerometer.h
+//  JPMotion.h
 //  JoyPlus
 //
-//  Created by Ciel Breiz on 15/2/14.
+//  Created by Zhou Xinzi on 15/2/14.
 //  Copyright (c) 2014 Ciel Breiz. All rights reserved.
 //
 
-#import "JPControlLayout.h"
-#import <CoreMotion/CoreMotion.h>
+#import <Foundation/Foundation.h>
 
-@interface JPMotion : JPControlLayout {
-    Joystick *joystick;
-}
+@interface JPMotion : NSObject
 
 @end
