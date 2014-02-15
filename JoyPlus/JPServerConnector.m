@@ -58,7 +58,7 @@ static JPServerConnector *gInstance = NULL;
     NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:&error];
     NSLog(@"Did receive, device connected.");
     isConnected = YES;
-    NSString *layout = [[result objectForKey:@"layout"]stringValue];
+    NSString *layout = [result objectForKey:@"layout"];
     NSLog(@"%@", layout);
     [jpConnectViewController setLayout:layout];
     [jpConnectViewController pushScene];

@@ -123,7 +123,7 @@
 - (IBAction)connectServer:(id)sender
 {
     NSLog(@"Trying to connect server");
-    [self decodeJSON:@"{\"ip\": \"127.0.0.1\", \"port\": \"31415\", \"id\": \"56008\"}"];
+    [self decodeJSON:@"{\"ip\": \"127.0.0.1\", \"port\": \"31415\", \"id\": \"55663\"}"];
     JPServerConnector* jpServerConnector = [JPServerConnector instance];
     [jpServerConnector setJPConnectViewController:self];
     [jpServerConnector setGameId: [(NSString*)[info objectForKey:@"id"] intValue]];
