@@ -10,7 +10,7 @@
 #import "SRWebSocket.h"
 
 @implementation JPServerConnector {
-    SRWebSocket* webSocket;
+    SRWebSocket* srWebSocket;
 }
 
 static JPServerConnector *gInstance = NULL;
@@ -34,9 +34,22 @@ static JPServerConnector *gInstance = NULL;
     [strUrl appendString: self.serverAddress];
     NSURL* url = [NSURL URLWithString:strUrl];
     NSURLRequest* urlRequest = [NSURLRequest requestWithURL: url];
-    webSocket = [[SRWebSocket alloc] initWithURLRequest: urlRequest];
-    [webSocket open];
+    srWebSocket = [[SRWebSocket alloc] initWithURLRequest: urlRequest];
+    [srWebSocket setDelegate: self];
+    [srWebSocket open];
     return YES;
 }
+
+- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message
+{
+    NSLog(@"Did receive");
+}
+
+- (void)webSocketDidOpen:(SRWebSocket *)webSocket
+{
+    NSLog(@"Socket Open");
+    [webSocket send: [NSString stringWithFormat:@"{\"gameId\":%d}", self.gameId]];
+}
+
 
 @end

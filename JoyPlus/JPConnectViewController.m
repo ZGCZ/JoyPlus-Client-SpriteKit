@@ -57,7 +57,8 @@
 {
     NSLog(@"Trying to connect server");
     JPServerConnector* jpServerConnector = [JPServerConnector instance];
-    [jpServerConnector connectServer:@"127.0.0.1:31415"];
+    [jpServerConnector setGameId: self.portText.text.intValue];
+    [jpServerConnector connectServer:self.addressText.text];
 }
 
 @end
