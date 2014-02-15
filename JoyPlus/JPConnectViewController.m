@@ -9,8 +9,17 @@
 #import "JPConnectViewController.h"
 
 #import "JPViewNavigator.h"
-#import "JPConnectScene.h"
 #import "JPServerConnector.h"
+#import "JPMyScene.h"
+#import "JPJoy2Button.h"
+#import "JPJoy3Button.h"
+#import "JPDrag.h"
+
+@interface JPConnectViewController ()
+
+-(NSString*) toJSONWithIP:(NSString*)ip andPort: (int)port andID: (int)gameID andType: (NSString*) type;
+
+@end
 
 @implementation JPConnectViewController {
     SKView* skView;
@@ -44,13 +53,36 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(NSString*) toJSONWithIP:(NSString*)ip andPort: (int)port andID: (int)gameID andType: (NSString*) type
+{
+    return [NSString stringWithFormat:@"{\"ip\": \"%@\", \"port\": \"%d\", \"id\": \"%d\", \"type\" : \"%@\"}",
+            ip, port, gameID, type];
+}
+
 - (IBAction)backButton:(id)sender
 {
     [JPViewNavigator toMain];
     NSLog(@"Connect. Going to ConnectScene");
-    SKScene * scene = [JPConnectScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    [skView presentScene:scene];
+    SKScene * scene = nil;
+    
+    NSError *error;
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[[self toJSONWithIP:@"127.0.0.1" andPort:31415 andID:000 andType:@"Joy2Button"] dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:&error];
+    NSString *type = [result objectForKey:@"type"];
+    NSLog(@"Type is %@", type);
+    if([type isEqual:@"Joy2Button"]){
+        scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
+    }
+    else if ([type isEqual:@"Joy3Button"]){
+        scene = [JPJoy3Button sceneWithSize:skView.bounds.size];
+    }
+    else if ([type isEqual:@"JPDrag"]){
+        scene = [JPDrag sceneWithSize:skView.bounds.size];
+    }
+    if(scene){
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        [skView presentScene:scene];
+        NSLog(@"Connect. Going to ControlScene");
+    }
 }
 
 - (IBAction)connectServer:(id)sender

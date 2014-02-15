@@ -7,7 +7,6 @@
 //
 
 #import "JPMyScene.h"
-#import "JPConnectScene.h"
 
 #import "JPViewNavigator.h"
 
@@ -49,13 +48,6 @@
     
     //if fire button touched, bring the rain
     if ([node.name isEqualToString:@"connect"]) {
-        /*
-        SKView * skView = (SKView *)self.view;
-        NSLog(@"Connect. Going to ConnectScene");
-        SKScene * scene = [JPConnectScene sceneWithSize:skView.bounds.size];
-        scene.scaleMode = SKSceneScaleModeAspectFill;
-        [skView presentScene:scene];
-         */
         NSLog(@"try to go to strange place.");
         [JPViewNavigator toConnect];
         [[JPViewNavigator jpConnectViewController] setSKView:self.view];
