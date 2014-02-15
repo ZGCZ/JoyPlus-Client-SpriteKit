@@ -8,6 +8,8 @@
 
 #import "JPJoy2Button.h"
 
+#import "JPServerConnector.h"
+
 @interface JPJoy2Button (){
     SKLabelNode *moveMe;
 }
@@ -49,6 +51,11 @@
     [super update:currentTime];
     moveMe.position = CGPointMake(moveMe.position.x + 0.05 *joystick.velocity.x, moveMe.position.y + 0.05* joystick.velocity.y);
     NSLog(@"%f * %f", joystick.velocity.x, joystick.velocity.y);
+    
+    JPServerConnector *jps = [JPServerConnector instance];
+    [jps send: [NSString stringWithFormat:@"{\"event\":\"joystick\",\"x\":\"%f\",\"y\":\"%f\"}",
+                joystick.velocity.x,
+                - joystick.velocity.y]];
 }
     
 @end

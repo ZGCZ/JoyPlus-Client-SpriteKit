@@ -8,6 +8,8 @@
 
 #import "Joystick.h"
 
+#import "JPServerConnector.h"
+
 #define kThumbSpringBackDuration .3
 @interface Joystick (Private)
 -(void)resetVelocity;
@@ -91,6 +93,14 @@
         velocity = CGPointMake(((thumbNode.position.x - self.anchorPointInPoints.x)), ((thumbNode.position.y - self.anchorPointInPoints.y)));
         
         angularVelocity = -atan2(thumbNode.position.x - self.anchorPointInPoints.x, thumbNode.position.y - self.anchorPointInPoints.y);
+        
+        /*
+        
+        JPServerConnector *jps = [JPServerConnector instance];
+        [jps send: [NSString stringWithFormat:@"{\"event\":\"joystick\",\"x\":\"%f\",\"y\":\"%f\"}",
+                    velocity.x,
+                    velocity.y]];
+         */
     }
     
 }
