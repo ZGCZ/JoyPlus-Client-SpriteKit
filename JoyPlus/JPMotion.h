@@ -10,4 +10,8 @@
 
 @interface JPMotion : NSObject
 
++ (JPMotion*) instance;
+
+- (double) orentation;
+
 @end
