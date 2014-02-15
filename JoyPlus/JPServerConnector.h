@@ -16,6 +16,7 @@
 @property int gameId;
 
 + (JPServerConnector*)instance;
++ (void)destroy;
 - (BOOL)isConnected;
 -(void)setJPConnectViewController: (JPConnectViewController*)c;
 - (void)connectServer: (NSString*) address;

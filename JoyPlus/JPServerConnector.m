@@ -28,6 +28,16 @@ static JPServerConnector *gInstance = NULL;
     return(gInstance);
 }
 
++ (void)destroy
+{
+    @synchronized(self)
+    {
+        if (gInstance) {
+            gInstance = NULL;
+        }
+    }
+}
+
 -(BOOL)isConnected
 {
     return isConnected;

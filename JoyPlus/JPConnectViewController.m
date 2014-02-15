@@ -108,6 +108,7 @@
 
 - (IBAction)backButton:(id)sender
 {
+    [JPServerConnector destroy];
     [JPViewNavigator toMain];
     NSLog(@"Back. Going to MyScene");
     SKScene *back = [JPMyScene sceneWithSize:skView.bounds.size];

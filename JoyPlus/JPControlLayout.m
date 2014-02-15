@@ -8,6 +8,7 @@
 
 #import "JPControlLayout.h"
 #import "JPMyScene.h"
+#import "JPServerConnector.h"
 
 @interface JPControlLayout (){
     char t;
@@ -44,6 +45,7 @@
     
     //if fire button touched, bring the rain
     if ([node.name isEqualToString:@"back"]) {
+        [JPServerConnector destroy];
         SKView * skView = (SKView *)self.view;
         NSLog(@"Connect. Going to MyScene");
         SKScene * scene = [JPMyScene sceneWithSize:skView.bounds.size];
