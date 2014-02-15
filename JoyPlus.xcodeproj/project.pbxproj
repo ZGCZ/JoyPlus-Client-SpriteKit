@@ -182,6 +182,13 @@
 			path = SocketRocket;
 			sourceTree = SOURCE_ROOT;
 		};
+		77D3017218AFD39700C217A5 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		9655AFC418A33622000960E9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +244,7 @@
 		96A5CEFC18A2AAA20072AFAB /* JoyPlus */ = {
 			isa = PBXGroup;
 			children = (
+				77D3017218AFD39700C217A5 /* iPad */,
 				7774B71E18AD014000D813D7 /* SocketRocket */,
 				96A5CF3918A2AE220072AFAB /* JPController */,
 				96A5CF0518A2AAA20072AFAB /* JPAppDelegate.h */,
@@ -590,12 +598,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyPlus/JoyPlus-Prefix.pch";
 				INFOPLIST_FILE = "JoyPlus/JoyPlus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -610,12 +619,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JoyPlus/JoyPlus-Prefix.pch";
 				INFOPLIST_FILE = "JoyPlus/JoyPlus-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_MAP_FILE_PATH = "$(TARGET_TEMP_DIR)/$(PRODUCT_NAME)-LinkMap-$(CURRENT_VARIANT)-$(CURRENT_ARCH).txt";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
