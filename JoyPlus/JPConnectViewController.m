@@ -95,7 +95,8 @@
 -(void)decodeJSON: (NSString*) jsonString
 {
     NSError *error = nil;
-    info = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:&error];
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:&error];
+    info = [NSMutableDictionary dictionaryWithDictionary:result];
 }
 
 - (IBAction)backButton:(id)sender
@@ -122,8 +123,7 @@
 - (IBAction)connectServer:(id)sender
 {
     NSLog(@"Trying to connect server");
-    [self decodeJSON:@"information"];
-    [self updateScene];
+    [self decodeJSON:@"{\"ip\": \"127.0.0.1\", \"port\": \"31415\", \"id\": \"56008\"}"];
     JPServerConnector* jpServerConnector = [JPServerConnector instance];
     [jpServerConnector setJPConnectViewController:self];
     [jpServerConnector setGameId: [(NSString*)[info objectForKey:@"id"] intValue]];

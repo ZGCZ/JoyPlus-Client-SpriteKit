@@ -54,10 +54,13 @@ static JPServerConnector *gInstance = NULL;
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message
 {
+    NSError *error = nil;
+    NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:&error];
     NSLog(@"Did receive, device connected.");
     isConnected = YES;
-    //从message中取出layout并且调用setlayout，即可。
-    [jpConnectViewController setLayout:message];
+    NSString *layout = [[result objectForKey:@"layout"]stringValue];
+    NSLog(@"%@", layout);
+    [jpConnectViewController setLayout:layout];
     [jpConnectViewController pushScene];
 }
 
