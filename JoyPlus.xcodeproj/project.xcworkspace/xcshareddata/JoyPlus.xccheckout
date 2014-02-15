@@ -5,19 +5,31 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>A95F3DF0-CB41-456B-9075-F26185AFA189</string>
+=======
+	<string>31DF3B1A-93F8-440F-8ABC-00714FA52284</string>
+>>>>>>> 09a45aa7cebe2b303e9286fc1fb62f5fce1bbb62
 	<key>IDESourceControlProjectName</key>
 	<string>JoyPlus</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>1F33966A-AA93-4904-87B3-8F1C88BA9B98</key>
+=======
+		<key>F814A28D-9479-4ADE-B2CB-A54B6915E900</key>
+>>>>>>> 09a45aa7cebe2b303e9286fc1fb62f5fce1bbb62
 		<string>https://github.com/ZGCZ/JoyPlus-Client-SpriteKit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>JoyPlus.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>1F33966A-AA93-4904-87B3-8F1C88BA9B98</key>
+=======
+		<key>F814A28D-9479-4ADE-B2CB-A54B6915E900</key>
+>>>>>>> 09a45aa7cebe2b303e9286fc1fb62f5fce1bbb62
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +37,22 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
+<<<<<<< HEAD
 	<string>1F33966A-AA93-4904-87B3-8F1C88BA9B98</string>
+=======
+	<string>F814A28D-9479-4ADE-B2CB-A54B6915E900</string>
+>>>>>>> 09a45aa7cebe2b303e9286fc1fb62f5fce1bbb62
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>1F33966A-AA93-4904-87B3-8F1C88BA9B98</string>
+=======
+			<string>F814A28D-9479-4ADE-B2CB-A54B6915E900</string>
+>>>>>>> 09a45aa7cebe2b303e9286fc1fb62f5fce1bbb62
 			<key>IDESourceControlWCCName</key>
 			<string>JoyPlus-Client-SpriteKit</string>
 		</dict>

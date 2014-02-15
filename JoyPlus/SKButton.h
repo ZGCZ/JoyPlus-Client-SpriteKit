@@ -7,9 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
-#import "JPController.h"
 
-@interface SKButton : SKSpriteNode<JPController>
+@interface SKButton : SKSpriteNode
 
 @property (nonatomic, strong) NSString *tag;
 @property (nonatomic, readonly) SEL actionTouchUpInside;
