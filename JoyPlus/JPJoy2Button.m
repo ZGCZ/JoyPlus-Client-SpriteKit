@@ -48,6 +48,7 @@
 -(void)update:(CFTimeInterval)currentTime {
     [super update:currentTime];
     moveMe.position = CGPointMake(moveMe.position.x + 0.05 *joystick.velocity.x, moveMe.position.y + 0.05* joystick.velocity.y);
+    NSLog(@"%f * %f", joystick.velocity.x, joystick.velocity.y);
 }
     
 @end

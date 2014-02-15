@@ -20,5 +20,6 @@
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message;
 - (void)webSocketDidOpen:(SRWebSocket *)webSocket;
 
+- (void)send: (NSString *)text;
 
 @end

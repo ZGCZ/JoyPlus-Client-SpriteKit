@@ -51,5 +51,10 @@ static JPServerConnector *gInstance = NULL;
     [webSocket send: [NSString stringWithFormat:@"{\"gameId\":%d}", self.gameId]];
 }
 
+- (void)send: (NSString *)text
+{
+    [srWebSocket send: text];
+}
+
 
 @end
