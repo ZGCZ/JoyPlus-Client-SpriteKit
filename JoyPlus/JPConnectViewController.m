@@ -211,7 +211,7 @@
             // Everything is done on the main thread.
             
             //[_lblStatus performSelectorOnMainThread:@selector(setText:) withObject:[metadataObj stringValue] waitUntilDone:NO];
-            NSLog([metadataObj stringValue]);
+            NSLog(@"%@", [metadataObj stringValue]);
             if (!done) {
                 done = true;
                 [self receiveJson:[metadataObj stringValue]];
