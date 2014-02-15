@@ -15,8 +15,15 @@
 }
 
 -(id)initWithSize:(CGSize)size {
+    if (size.width < size.height) {
+        CGFloat width = size.width;
+        size.width = size.height;
+        size.height = width;
+    }
+    
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
+        NSLog(@"%f * %f", size.width, size.height);
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
