@@ -19,8 +19,8 @@
         buttonOne.tag = @"start";
         [buttonOne.title setText:@"[ start ]"];
         [buttonOne.title setFontName:@"Chalkduster"];
-        [buttonOne.title setFontSize:15];
-        buttonOne.position = CGPointMake(CGRectGetMidX(self.frame)-40,CGRectGetMidY(self.frame));
+        [buttonOne.title setFontSize:30];
+        buttonOne.position = CGPointMake(CGRectGetMidX(self.frame)-100,CGRectGetMidY(self.frame));
         [buttonOne link];
         [self.controllers addObject:buttonOne];
         
@@ -28,8 +28,8 @@
         buttonTwo.tag = @"select";
         [buttonTwo.title setText:@"[ select ]"];
         [buttonTwo.title setFontName:@"Chalkduster"];
-        [buttonTwo.title setFontSize:15];
-        buttonTwo.position = CGPointMake(CGRectGetMidX(self.frame)+40,CGRectGetMidY(self.frame));
+        [buttonTwo.title setFontSize:30];
+        buttonTwo.position = CGPointMake(CGRectGetMidX(self.frame)+100,CGRectGetMidY(self.frame));
         [buttonTwo link];
         [self.controllers addObject:buttonTwo];
         

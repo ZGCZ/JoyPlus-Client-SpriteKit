@@ -69,7 +69,6 @@
 - (void)updateTouchPoint:(UITouch*)touch
 {
     CGPoint positionInScene = [touch locationInNode:self];
-    NSLog(@"Position changed: (%f, %f)", positionInScene.x - originX, -(positionInScene.y - originY));
     JPServerConnector *jps = [JPServerConnector instance];
     [jps send: [NSString stringWithFormat:@"{\"event\":\"dragMove\",\"x\":%f,\"y\":%f}",
                 positionInScene.x - originX,

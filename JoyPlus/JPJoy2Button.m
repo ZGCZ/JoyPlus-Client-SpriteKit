@@ -24,11 +24,11 @@
         [self.controllers addObject:self.joystick];
         
         self.buttonOne = [self createButton];
-        [self.buttonOne setPosition:CGPointMake(size.width - 40, 95)];
+        [self.buttonOne setPosition:CGPointMake(size.width - 100, CGRectGetMidY(self.frame) - 100)];
         [self.controllers addObject:self.buttonOne];
         
         self.buttonTwo = [self createButton];
-        [self.buttonTwo setPosition:CGPointMake(size.width - 85, 50)];
+        [self.buttonTwo setPosition:CGPointMake(size.width - 250, CGRectGetMidY(self.frame) - 250)];
         [self.controllers addObject:self.buttonTwo];
         
         [self drawController];
@@ -42,7 +42,7 @@
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-    [super update:currentTime];    
+    [super update:currentTime];
     JPServerConnector *jps = [JPServerConnector instance];
     [jps send: [NSString stringWithFormat:@"{\"event\":\"joystick\",\"x\":%f,\"y\":%f}",
                 joystick.velocity.x,

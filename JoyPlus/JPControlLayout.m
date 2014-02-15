@@ -63,7 +63,8 @@
 -(Joystick*)createDefaultJoystick
 {
     Joystick* joystick = [Joystick joystickWithThumb:[SKSpriteNode spriteNodeWithImageNamed:@"joystick.png"] andBackdrop:[SKSpriteNode spriteNodeWithImageNamed:@"dpad.png"]];
-    joystick.position = CGPointMake(70, 70);
+    [joystick setScale:2.5];
+    joystick.position = CGPointMake(180, 180);
     return joystick;
 }
 
@@ -71,6 +72,7 @@
 {
     NSString* tag = [NSString stringWithFormat:@"%c", t];
     SKButton *buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
+    [buttonOne setScale:2.5];
     buttonOne.tag = tag;
     [buttonOne.title setText:tag];
     [buttonOne.title setFontName:@"Chalkduster"];
@@ -83,6 +85,7 @@
 -(SKButton*)createButtonWithTitle:(NSString*)title andTag:(NSString*)tag
 {
     SKButton *buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
+    [buttonOne setScale:2.5];
     buttonOne.tag = tag;
     [buttonOne.title setText:title];
     [buttonOne.title setFontName:@"Chalkduster"];

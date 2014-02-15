@@ -18,11 +18,11 @@
     if(self = [super initWithSize:size]){
         
         self.buttonOne = [self createButton];
-        [self.buttonOne setPosition:CGPointMake(size.width - 40, 50)];
+        [self.buttonOne setPosition:CGPointMake(size.width - 150, 150)];
         [self.controllers addObject:self.buttonOne];
         
         self.buttonTwo = [self createButton];
-        [self.buttonTwo setPosition:CGPointMake(40, 50)];
+        [self.buttonTwo setPosition:CGPointMake(150, 150)];
         [self.controllers addObject:self.buttonTwo];
         
         [self drawController];

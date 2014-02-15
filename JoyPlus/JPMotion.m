@@ -64,7 +64,7 @@ static JPMotion* instance = NULL;
         xyTheta = 1 - 2*at/M_PI;
     }
     // NSLog(@"x %.2f y %.2f z %.2f", gravity.x, gravity.y, gravity.z);
-    NSLog(@"Theta %f", xyTheta);
+    //NSLog(@"Theta %f", xyTheta);
     return xyTheta;
 }
 
