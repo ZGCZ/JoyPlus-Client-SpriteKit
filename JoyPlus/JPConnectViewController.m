@@ -59,28 +59,9 @@
 
 -(void)updateScene
 {
-<<<<<<< HEAD
-    NSString *type = [info objectForKey:@"type"];
-    if([type isEqual:@"Joy2Button"]){
-        scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
-    }
-    else if ([type isEqual:@"Joy3Button"]){
-        scene = [JPJoy3Button sceneWithSize:skView.bounds.size];
-    }
-    else if ([type isEqual:@"JPDrag"]){
-        scene = [JPDrag sceneWithSize:skView.bounds.size];
-    }
-    else{
-        scene = NULL;
-    }
-    if (scene) {
-        scene.scaleMode = SKSceneScaleModeAspectFill;
-    }
-=======
     // scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
     scene = [JPDriving sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
->>>>>>> 50c27ff5600b35058a3955c71fb983c4b415814d
 }
 
 -(void)decodeJSON: (NSString*) jsonString
