@@ -73,7 +73,7 @@ static JPServerConnector *gInstance = NULL;
     isConnected = YES;
     NSString *layout = [result objectForKey:@"layout"];
     NSLog(@"%@", layout);
-    [jpConnectViewController setLayout:@"Joy2Button"];
+    [jpConnectViewController setLayout:layout];
     [jpConnectViewController pushScene];
 }
 
