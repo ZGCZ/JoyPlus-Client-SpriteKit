@@ -1,48 +1,71 @@
 //
-//  JPAccelerometer.m
+//  JPMotion.m
 //  JoyPlus
 //
-//  Created by Ciel Breiz on 15/2/14.
+//  Created by Zhou Xinzi on 15/2/14.
 //  Copyright (c) 2014 Ciel Breiz. All rights reserved.
 //
 
 #import "JPMotion.h"
-@interface JPMotion ()
+#import <CoreMotion/CoreMotion.h>
 
--(CMMotionManager *)motionManager;
-
-@end
-
-@implementation JPMotion
-
--(id)initWithSize:(CGSize)size
-{
-    if(self = [super initWithSize:size]) {
-        joystick = [self createDefaultJoystick];
-        joystick.position = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
-        [joystick controlByAcclerometer];
-        [self addChild:joystick];
-        
-    }
-    return self;
+@implementation JPMotion {
+    CMMotionManager *motionManager;
+    CMAcceleration acceleration;
+    CMRotationRate rotation;
+    CMAcceleration gravity;
 }
 
--(CMMotionManager *)motionManager
+static JPMotion* instance = NULL;
+
++ (JPMotion*) instance
 {
-    CMMotionManager *motionManager = nil;
-    id appDelegate = [UIApplication sharedApplication].delegate;
-    if ([appDelegate respondsToSelector:@selector(motionManager)]) {
-        motionManager = [appDelegate motionManager];
+    if (instance == NULL) {
+        instance = [[self alloc] init];
     }
-    return motionManager;
+    return instance;
 }
 
-- (void)startMotionDetect
+- (JPMotion*) init
 {
-    __block float stepMoveFactor = 15;
-    [self.motionManager startAccelerometerUpdatesToQueue:[[NSOperationQueue alloc]init] withHandler:^(CMAccelerometerData *accelerometerData, NSError *error) {
-        //handler;
-    }];
+    motionManager = [[CMMotionManager alloc]init];
+    
+    motionManager.accelerometerUpdateInterval = .2;
+    motionManager.gyroUpdateInterval = .2;
+    motionManager.deviceMotionUpdateInterval = .2;
+    
+    [motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue]
+                                             withHandler:^(CMAccelerometerData  *accelerometerData, NSError *error) {
+                                                 acceleration = accelerometerData.acceleration;
+                                                 if(error){                                                     NSLog(@"%@", error);
+                                                 }
+                                             }];
+    
+    [motionManager startGyroUpdatesToQueue:[NSOperationQueue currentQueue]
+                                    withHandler:^(CMGyroData *gyroData, NSError *error) {
+                                        rotation = gyroData.rotationRate;
+                                    }];
+    
+    [motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue currentQueue]
+                                       withHandler:^(CMDeviceMotion *deviceMotionData, NSError *error) {
+                                           gravity = deviceMotionData.gravity;
+                                       }];
+    
+    return [super init];
+}
+
+- (double) orentation
+{
+    double at = atan2(gravity.x,gravity.y);
+    double xyTheta = 0;
+    if (at < - M_PI / 2) {
+        xyTheta = - 3 - 2*at/M_PI;
+    } else {
+        xyTheta = 1 - 2*at/M_PI;
+    }
+    // NSLog(@"x %.2f y %.2f z %.2f", gravity.x, gravity.y, gravity.z);
+    NSLog(@"Theta %f", xyTheta);
+    return xyTheta;
 }
 
 @end
