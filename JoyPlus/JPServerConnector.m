@@ -49,9 +49,10 @@ static JPServerConnector *gInstance = NULL;
     jpConnectViewController = c;
 }
 
-- (void)connectServer: (NSString*) address
+- (void)connectServer: (NSString*) address withGameId: (int) gameId
 {
     NSLog(@"Now connect lol");
+    _gameId = gameId;
     isConnected = NO;
     self.serverAddress = address;
     NSMutableString* strUrl = [NSMutableString stringWithString:@"ws://"];

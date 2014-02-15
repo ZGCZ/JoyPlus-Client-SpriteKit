@@ -140,7 +140,8 @@
     JPServerConnector* jpServerConnector = [JPServerConnector instance];
     [jpServerConnector setJPConnectViewController:self];
     [jpServerConnector setGameId: [(NSString*)[info objectForKey:@"id"] intValue]];
-    [jpServerConnector connectServer:[NSString stringWithFormat:@"%@:%@", [info objectForKey:@"ip"], [info objectForKey:@"port"]]];
+    [jpServerConnector connectServer:[NSString stringWithFormat:@"%@:%@", [info objectForKey:@"ip"], [info objectForKey:@"port"]]
+                          withGameId: [(NSString*)[info objectForKey:@"id"] intValue]];
 }
 
 - (void)receiveJson: (NSString*) input
@@ -150,7 +151,8 @@
     JPServerConnector* jpServerConnector = [JPServerConnector instance];
     [jpServerConnector setJPConnectViewController:self];
     [jpServerConnector setGameId: [(NSString*)[info objectForKey:@"id"] intValue]];
-    [jpServerConnector connectServer:[NSString stringWithFormat:@"%@:%@", [info objectForKey:@"ip"], [info objectForKey:@"port"]]];
+    [jpServerConnector connectServer:[NSString stringWithFormat:@"%@:%@", [info objectForKey:@"ip"], [info objectForKey:@"port"]]
+                          withGameId: [(NSString*)[info objectForKey:@"id"] intValue]];
 }
 
 // below for QR code
