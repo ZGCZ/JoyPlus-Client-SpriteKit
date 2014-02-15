@@ -11,6 +11,8 @@
 
 @implementation JPServerConnector {
     SRWebSocket* srWebSocket;
+    BOOL isConnected;
+    JPConnectViewController* jpConnectViewController;
 }
 
 static JPServerConnector *gInstance = NULL;
@@ -26,9 +28,20 @@ static JPServerConnector *gInstance = NULL;
     return(gInstance);
 }
 
-- (BOOL)connectServer: (NSString*) address
+-(BOOL)isConnected
+{
+    return isConnected;
+}
+
+-(void)setJPConnectViewController: (JPConnectViewController*)c
+{
+    jpConnectViewController = c;
+}
+
+- (void)connectServer: (NSString*) address
 {
     NSLog(@"Now connect lol");
+    isConnected = NO;
     self.serverAddress = address;
     NSMutableString* strUrl = [NSMutableString stringWithString:@"ws://"];
     [strUrl appendString: self.serverAddress];
@@ -37,12 +50,13 @@ static JPServerConnector *gInstance = NULL;
     srWebSocket = [[SRWebSocket alloc] initWithURLRequest: urlRequest];
     [srWebSocket setDelegate: self];
     [srWebSocket open];
-    return YES;
 }
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message
 {
-    NSLog(@"Did receive");
+    NSLog(@"Did receive, device connected.");
+    isConnected = YES;
+    [jpConnectViewController pushScene];
 }
 
 - (void)webSocketDidOpen:(SRWebSocket *)webSocket

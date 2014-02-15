@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import "JPPushScene.h"
 
-@interface JPConnectViewController : UIViewController
+@interface JPConnectViewController : UIViewController<JPPushScene>
 
 - (IBAction)backButton:(id)sender;
 

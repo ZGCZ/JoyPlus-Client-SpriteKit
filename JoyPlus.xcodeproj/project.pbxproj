@@ -131,6 +131,7 @@
 		96F5DADC18AF68270021F462 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		96F5DADE18AF68390021F462 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		96F5DAE018AF68450021F462 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		96F5DAE218AF8D650021F462 /* JPPushScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPPushScene.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +244,7 @@
 				7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */,
 				96A5CF0B18A2AAA20072AFAB /* JPViewController.h */,
 				96A5CF0C18A2AAA20072AFAB /* JPViewController.m */,
+				96F5DAE218AF8D650021F462 /* JPPushScene.h */,
 				7774B6CC18AC9B9600D813D7 /* JPConnectViewController.h */,
 				7774B6CD18AC9B9600D813D7 /* JPConnectViewController.m */,
 				7774B6CF18AD002D00D813D7 /* JPServerConnector.h */,
