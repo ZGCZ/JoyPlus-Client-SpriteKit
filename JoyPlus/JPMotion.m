@@ -30,9 +30,9 @@ static JPMotion* instance = NULL;
 {
     motionManager = [[CMMotionManager alloc]init];
     
-    motionManager.accelerometerUpdateInterval = .2;
-    motionManager.gyroUpdateInterval = .2;
-    motionManager.deviceMotionUpdateInterval = .2;
+    motionManager.accelerometerUpdateInterval = 0.01;
+    motionManager.gyroUpdateInterval = 0.01;
+    motionManager.deviceMotionUpdateInterval = 0.01;
     
     [motionManager startAccelerometerUpdatesToQueue:[NSOperationQueue currentQueue]
                                              withHandler:^(CMAccelerometerData  *accelerometerData, NSError *error) {
