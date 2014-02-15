@@ -48,6 +48,7 @@
 		96C29BF918A3A5A10034DA75 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C29BF718A3A5A10034DA75 /* joystick.png */; };
 		96C29BFF18A3AD8D0034DA75 /* Joystick.md in Resources */ = {isa = PBXBuildFile; fileRef = 96C29BFE18A3AD8D0034DA75 /* Joystick.md */; };
 		96C29C0618A3E81E0034DA75 /* JPCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C29C0518A3E81E0034DA75 /* JPCompatibility.m */; };
+		96C59B8D18AFF13F00EF84EB /* JPNES.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C59B8C18AFF13F00EF84EB /* JPNES.m */; };
 		96F5DADB18AF680E0021F462 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F5DADA18AF680E0021F462 /* CoreMedia.framework */; };
 		96F5DADD18AF68270021F462 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F5DADC18AF68270021F462 /* CoreVideo.framework */; };
 		96F5DADF18AF68390021F462 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F5DADE18AF68390021F462 /* QuartzCore.framework */; };
@@ -130,6 +131,8 @@
 		96C29BFE18A3AD8D0034DA75 /* Joystick.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Joystick.md; sourceTree = "<group>"; };
 		96C29C0418A3E81E0034DA75 /* JPCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCompatibility.h; sourceTree = "<group>"; };
 		96C29C0518A3E81E0034DA75 /* JPCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCompatibility.m; sourceTree = "<group>"; };
+		96C59B8B18AFF13F00EF84EB /* JPNES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNES.h; sourceTree = "<group>"; };
+		96C59B8C18AFF13F00EF84EB /* JPNES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPNES.m; sourceTree = "<group>"; };
 		96F5DADA18AF680E0021F462 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		96F5DADC18AF68270021F462 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		96F5DADE18AF68390021F462 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -320,6 +323,8 @@
 				96A5CF3E18A2B21B0072AFAB /* JPControlLayout.m */,
 				96A5CF4118A2B44D0072AFAB /* JPJoy2Button.h */,
 				96A5CF4218A2B44D0072AFAB /* JPJoy2Button.m */,
+				96C59B8B18AFF13F00EF84EB /* JPNES.h */,
+				96C59B8C18AFF13F00EF84EB /* JPNES.m */,
 				96A5CF4418A2B8C30072AFAB /* JPJoy3Button.h */,
 				96A5CF4518A2B8C30072AFAB /* JPJoy3Button.m */,
 				9674552A18A876F7005C881E /* JPDrag.h */,
@@ -450,6 +455,7 @@
 				7774B6D118AD002D00D813D7 /* JPServerConnector.m in Sources */,
 				96C29BF518A3A57E0034DA75 /* Joystick.m in Sources */,
 				7774B6CE18AC9B9600D813D7 /* JPConnectViewController.m in Sources */,
+				96C59B8D18AFF13F00EF84EB /* JPNES.m in Sources */,
 				7774B72718AD014000D813D7 /* NSData+SRB64Additions.m in Sources */,
 				9655AFC318A3342C000960E9 /* SKButton.m in Sources */,
 				7774B72818AD014000D813D7 /* SRWebSocket.m in Sources */,

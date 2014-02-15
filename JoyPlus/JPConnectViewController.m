@@ -15,6 +15,7 @@
 #import "JPJoy3Button.h"
 #import "JPDrag.h"
 #import "JPDriving.h"
+#import "JPNES.h"
 
 #import <AVFoundation/AVFoundation.h>
 
@@ -87,6 +88,9 @@
     else if ([layout isEqual:@"JPDriving"]){
         scene = [JPDriving sceneWithSize:skView.bounds.size];
     }
+    else if ([layout isEqual:@"JPNES"]){
+        scene = [JPNES sceneWithSize:skView.bounds.size];
+    }
     else{
         scene = NULL;
     }
@@ -126,7 +130,7 @@
 - (IBAction)connectServer:(id)sender
 {
     NSLog(@"Trying to connect server");
-    [self decodeJSON:@"{\"ip\": \"127.0.0.1\", \"port\": \"31415\", \"id\": \"55663\"}"];
+    [self decodeJSON:@"{\"ip\": \"127.0.0.1\", \"port\": \"31415\", \"id\": \"57251\"}"];
     JPServerConnector* jpServerConnector = [JPServerConnector instance];
     [jpServerConnector setJPConnectViewController:self];
     [jpServerConnector setGameId: [(NSString*)[info objectForKey:@"id"] intValue]];
