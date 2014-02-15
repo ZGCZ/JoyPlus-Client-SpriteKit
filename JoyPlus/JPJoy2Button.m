@@ -53,7 +53,7 @@
     NSLog(@"%f * %f", joystick.velocity.x, joystick.velocity.y);
     
     JPServerConnector *jps = [JPServerConnector instance];
-    [jps send: [NSString stringWithFormat:@"{\"event\":\"joystick\",\"x\":\"%f\",\"y\":\"%f\"}",
+    [jps send: [NSString stringWithFormat:@"{\"event\":\"joystick\",\"x\":%f,\"y\":%f}",
                 joystick.velocity.x,
                 - joystick.velocity.y]];
 }

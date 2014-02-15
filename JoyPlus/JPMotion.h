@@ -12,6 +12,6 @@
 
 + (JPMotion*) instance;
 
-- (double) orentation;
+- (double) orientation;
 
 @end

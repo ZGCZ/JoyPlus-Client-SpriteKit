@@ -14,6 +14,7 @@
 #import "JPJoy2Button.h"
 #import "JPJoy3Button.h"
 #import "JPDrag.h"
+#import "JPDriving.h"
 
 @interface JPConnectViewController (){
     SKScene *scene;
@@ -57,7 +58,8 @@
 
 -(void)updateScene
 {
-    scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
+    // scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
+    scene = [JPDriving sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
 }
 

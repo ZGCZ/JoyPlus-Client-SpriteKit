@@ -10,4 +10,7 @@
 
 @interface JPDriving : JPControlLayout
 
+@property (strong, nonatomic) SKButton *buttonOne;
+@property (strong, nonatomic) SKButton *buttonTwo;
+
 @end

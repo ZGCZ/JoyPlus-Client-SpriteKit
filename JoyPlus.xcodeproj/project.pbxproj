@@ -16,6 +16,7 @@
 		7774B72718AD014000D813D7 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72218AD014000D813D7 /* NSData+SRB64Additions.m */; };
 		7774B72818AD014000D813D7 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72518AD014000D813D7 /* SRWebSocket.m */; };
 		7774B72B18AD1B1300D813D7 /* JPViewNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */; };
+		77F64C5818AF9EC4006D0157 /* JPDriving.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F64C5718AF9EC4006D0157 /* JPDriving.m */; };
 		964553C218AF51540001D899 /* Joystick+JPJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 964553C118AF51540001D899 /* Joystick+JPJoystick.m */; };
 		964553C518AF51D50001D899 /* JPMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 964553C418AF51D50001D899 /* JPMotion.m */; };
 		9655AFC318A3342C000960E9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655AFC218A3342C000960E9 /* SKButton.m */; };
@@ -80,6 +81,8 @@
 		7774B72518AD014000D813D7 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		7774B72918AD1B1300D813D7 /* JPViewNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPViewNavigator.h; sourceTree = "<group>"; };
 		7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPViewNavigator.m; sourceTree = "<group>"; };
+		77F64C5618AF9EC4006D0157 /* JPDriving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDriving.h; sourceTree = "<group>"; };
+		77F64C5718AF9EC4006D0157 /* JPDriving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDriving.m; sourceTree = "<group>"; };
 		964553C018AF51540001D899 /* Joystick+JPJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Joystick+JPJoystick.h"; sourceTree = "<group>"; };
 		964553C118AF51540001D899 /* Joystick+JPJoystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Joystick+JPJoystick.m"; sourceTree = "<group>"; };
 		964553C318AF51D50001D899 /* JPMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPMotion.h; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				7774B6CD18AC9B9600D813D7 /* JPConnectViewController.m */,
 				7774B6CF18AD002D00D813D7 /* JPServerConnector.h */,
 				7774B6D018AD002D00D813D7 /* JPServerConnector.m */,
+				964553C318AF51D50001D899 /* JPMotion.h */,
+				964553C418AF51D50001D899 /* JPMotion.m */,
 				96A5CF0E18A2AAA20072AFAB /* JPMyScene.h */,
 				96A5CF0F18A2AAA20072AFAB /* JPMyScene.m */,
 				96A5CF4018A2B22C0072AFAB /* Layout */,
@@ -311,10 +316,10 @@
 				96A5CF4518A2B8C30072AFAB /* JPJoy3Button.m */,
 				9674552A18A876F7005C881E /* JPDrag.h */,
 				9674552B18A876F7005C881E /* JPDrag.m */,
-				964553C318AF51D50001D899 /* JPMotion.h */,
-				964553C418AF51D50001D899 /* JPMotion.m */,
 				96C29C0418A3E81E0034DA75 /* JPCompatibility.h */,
 				96C29C0518A3E81E0034DA75 /* JPCompatibility.m */,
+				77F64C5618AF9EC4006D0157 /* JPDriving.h */,
+				77F64C5718AF9EC4006D0157 /* JPDriving.m */,
 			);
 			name = Layout;
 			sourceTree = "<group>";
@@ -452,6 +457,7 @@
 				9655AFD318A345C3000960E9 /* SKButton+JPButton.m in Sources */,
 				964553C218AF51540001D899 /* Joystick+JPJoystick.m in Sources */,
 				7774B72618AD014000D813D7 /* base64.c in Sources */,
+				77F64C5818AF9EC4006D0157 /* JPDriving.m in Sources */,
 				96A5CF0318A2AAA20072AFAB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
