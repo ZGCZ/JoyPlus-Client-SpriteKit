@@ -12,6 +12,7 @@
 
 @interface JPConnectViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
 
+- (void)reload;
 - (void)pushScene;
 -(void)setLayout: (NSString*)layout;
 

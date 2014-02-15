@@ -68,6 +68,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)reload
+{
+    [self startReading];
+}
+
 -(void)setLayout: (NSString*)layout
 {
     [info setObject:layout forKey:@"layout"];
@@ -131,7 +136,7 @@
 - (IBAction)connectServer:(id)sender
 {
     NSLog(@"Trying to connect server");
-    [self decodeJSON:@"{\"ip\": \"127.0.0.1\", \"port\": \"31415\", \"id\": \"57251\"}"];
+    [self decodeJSON:@"{\"ip\": \"127.0.0.1\", \"port\": \"31415\", \"id\": \"58311\"}"];
     JPServerConnector* jpServerConnector = [JPServerConnector instance];
     [jpServerConnector setJPConnectViewController:self];
     [jpServerConnector setGameId: [(NSString*)[info objectForKey:@"id"] intValue]];

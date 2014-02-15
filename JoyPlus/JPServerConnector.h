@@ -10,7 +10,7 @@
 #import "SRWebSocket.h"
 #import "JPConnectViewController.h"
 
-@interface JPServerConnector : NSObject <SRWebSocketDelegate>
+@interface JPServerConnector : NSObject <SRWebSocketDelegate, UIAlertViewDelegate>
 
 @property NSString* serverAddress;
 @property int gameId;

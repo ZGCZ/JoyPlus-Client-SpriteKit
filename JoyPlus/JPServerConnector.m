@@ -13,6 +13,7 @@
     SRWebSocket* srWebSocket;
     BOOL isConnected;
     JPConnectViewController* jpConnectViewController;
+    UIAlertView *alert;
 }
 
 static JPServerConnector *gInstance = NULL;
@@ -64,13 +65,14 @@ static JPServerConnector *gInstance = NULL;
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message
 {
+    [alert dismissWithClickedButtonIndex:-1 animated:NO];
     NSError *error = nil;
     NSDictionary *result = [NSJSONSerialization JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:&error];
     NSLog(@"Did receive, device connected.");
     isConnected = YES;
     NSString *layout = [result objectForKey:@"layout"];
     NSLog(@"%@", layout);
-    [jpConnectViewController setLayout:layout];
+    [jpConnectViewController setLayout:@"Joy2Button"];
     [jpConnectViewController pushScene];
 }
 
@@ -78,6 +80,20 @@ static JPServerConnector *gInstance = NULL;
 {
     NSLog(@"Socket Open");
     [webSocket send: [NSString stringWithFormat:@"{\"gameId\":%d}", self.gameId]];
+    alert = [[UIAlertView alloc] initWithTitle:@"Connecting"
+                                        message:@"Waiting for server..."
+                                        delegate:self
+                                        cancelButtonTitle:@"Cancel"
+                                        otherButtonTitles:nil];
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if(buttonIndex==0){
+        [JPServerConnector destroy];
+        [jpConnectViewController reload];
+    }
 }
 
 - (void)send: (NSString *)text
