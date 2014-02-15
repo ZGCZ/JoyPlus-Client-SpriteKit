@@ -16,7 +16,7 @@
 #import "JPDrag.h"
 
 @interface JPConnectViewController (){
-    SKScene * scene;
+    SKScene *scene;
 }
 
 -(NSString*) toJSONWithIP:(NSString*)ip andPort: (int)port andID: (int)gameID andType: (NSString*) type;
@@ -55,7 +55,13 @@
     // Dispose of any resources that can be recreated.
 }
 
--(NSString*) toJSONWithIP:(NSString*)ip andPort: (int)port andID: (int)gameID andType: (NSString*) type
+-(void)updateScene
+{
+    scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+}
+
+-(NSString*)toJSONWithIP:(NSString*)ip andPort: (int)port andID: (int)gameID andType: (NSString*) type
 {
     return [NSString stringWithFormat:@"{\"ip\": \"%@\", \"port\": \"%d\", \"id\": \"%d\", \"type\" : \"%@\"}",
             ip, port, gameID, type];
@@ -73,8 +79,7 @@
 - (void)pushScene
 {
     [JPViewNavigator toMain];
-    scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    [self updateScene];
     NSLog(@"Connect. Going to ConnectScene");
     if(scene){
         scene.scaleMode = SKSceneScaleModeAspectFill;

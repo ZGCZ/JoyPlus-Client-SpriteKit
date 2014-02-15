@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "SRWebSocket.h"
 #import "JPConnectViewController.h"
-#import "JPPushScene.h"
 
 @interface JPServerConnector : NSObject <SRWebSocketDelegate>
 
