@@ -78,6 +78,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgr-Dd-Pr7">
+                                <rect key="frame" x="20" y="90" width="186" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -86,6 +91,7 @@
                     <connections>
                         <outlet property="addressText" destination="XYC-wE-cuJ" id="ASg-ya-MWu"/>
                         <outlet property="portText" destination="32v-Kx-j4c" id="YQl-nr-2Il"/>
+                        <outlet property="scannerView" destination="Rgr-Dd-Pr7" id="ICL-Ci-FP2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzY-cI-r3x" userLabel="First Responder" sceneMemberID="firstResponder"/>

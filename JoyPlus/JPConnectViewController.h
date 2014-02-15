@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface JPConnectViewController : UIViewController
+@interface JPConnectViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
 
 - (void)pushScene;
 -(void)setLayout: (NSString*)layout;
@@ -23,5 +24,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *portText;
 
 - (void)setSKView: (SKView*) input;
+
+@property (weak, nonatomic) IBOutlet UIView *scannerView;
 
 @end
