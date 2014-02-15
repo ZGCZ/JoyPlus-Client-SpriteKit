@@ -84,6 +84,9 @@
     else if ([layout isEqual:@"JPDrag"]){
         scene = [JPDrag sceneWithSize:skView.bounds.size];
     }
+    else if ([layout isEqual:@"JPDriving"]){
+        scene = [JPDriving sceneWithSize:skView.bounds.size];
+    }
     else{
         scene = NULL;
     }
