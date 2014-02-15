@@ -57,11 +57,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)setLayout: (NSString*)layout
+{
+    [info setObject:layout forKey:@"layout"];
+}
+
 -(void)updateScene
 {
-    // scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
-    scene = [JPDriving sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    NSString *layout = [info objectForKey:@"layout"];
+    if([layout isEqual:@"Joy2Button"]){
+        scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
+    }
+    else if ([layout isEqual:@"Joy3Button"]){
+        scene = [JPJoy3Button sceneWithSize:skView.bounds.size];
+    }
+    else if ([layout isEqual:@"JPDrag"]){
+        scene = [JPDrag sceneWithSize:skView.bounds.size];
+    }
+    else{
+        scene = NULL;
+    }
+    if (scene) {
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+    }
 }
 
 -(void)decodeJSON: (NSString*) jsonString

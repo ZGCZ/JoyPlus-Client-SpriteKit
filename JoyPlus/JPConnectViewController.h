@@ -12,6 +12,7 @@
 @interface JPConnectViewController : UIViewController
 
 - (void)pushScene;
+-(void)setLayout: (NSString*)layout;
 
 - (IBAction)backButton:(id)sender;
 

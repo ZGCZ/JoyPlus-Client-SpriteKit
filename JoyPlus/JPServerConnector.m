@@ -56,6 +56,8 @@ static JPServerConnector *gInstance = NULL;
 {
     NSLog(@"Did receive, device connected.");
     isConnected = YES;
+    //从message中取出layout并且调用setlayout，即可。
+    [jpConnectViewController setLayout:message];
     [jpConnectViewController pushScene];
 }
 
