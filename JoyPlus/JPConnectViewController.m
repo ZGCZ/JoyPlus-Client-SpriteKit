@@ -14,6 +14,7 @@
 #import "JPJoy2Button.h"
 #import "JPJoy3Button.h"
 #import "JPDrag.h"
+#import "JPDriving.h"
 
 @interface JPConnectViewController (){
     SKScene *scene;
@@ -58,6 +59,7 @@
 
 -(void)updateScene
 {
+<<<<<<< HEAD
     NSString *type = [info objectForKey:@"type"];
     if([type isEqual:@"Joy2Button"]){
         scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
@@ -74,6 +76,11 @@
     if (scene) {
         scene.scaleMode = SKSceneScaleModeAspectFill;
     }
+=======
+    // scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
+    scene = [JPDriving sceneWithSize:skView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+>>>>>>> 50c27ff5600b35058a3955c71fb983c4b415814d
 }
 
 -(void)decodeJSON: (NSString*) jsonString

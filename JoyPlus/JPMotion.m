@@ -54,7 +54,7 @@ static JPMotion* instance = NULL;
     return [super init];
 }
 
-- (double) orentation
+- (double) orientation
 {
     double at = atan2(gravity.x,gravity.y);
     double xyTheta = 0;
