@@ -8,6 +8,8 @@
 
 #import "SKButton+JPButton.h"
 
+#import "JPServerConnector.h"
+
 @implementation SKButton (JPButton)
 
 -(void)link
@@ -18,11 +20,15 @@
 
 -(void)buttonPressed
 {
+    JPServerConnector *jps = [JPServerConnector instance];
+    [jps send: [NSString stringWithFormat:@"{\"event\":\"keydown\",\"key\":\"%@\"}", self.tag]];
     NSLog(@"Button %@ Pressed", self.tag);
 }
 
 -(void)buttonReleased
 {
+    JPServerConnector *jps = [JPServerConnector instance];
+    [jps send: [NSString stringWithFormat:@"{\"event\":\"keyup\",\"key\":\"%@\"}", self.tag]];
     NSLog(@"Button %@ Released", self.tag);
 }
 

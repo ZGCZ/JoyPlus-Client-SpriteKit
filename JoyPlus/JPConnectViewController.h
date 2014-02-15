@@ -15,6 +15,10 @@
 
 - (IBAction)connectServer:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UITextField *addressText;
+
+@property (weak, nonatomic) IBOutlet UITextField *portText;
+
 - (void)setSKView: (SKView*) input;
 
 @end
