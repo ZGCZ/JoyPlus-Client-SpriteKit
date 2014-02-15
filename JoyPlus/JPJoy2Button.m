@@ -10,7 +10,9 @@
 
 #import "JPServerConnector.h"
 
-@interface JPJoy2Button ()
+@interface JPJoy2Button () {
+    int joysticktime;
+}
 @end
 
 @implementation JPJoy2Button
@@ -18,6 +20,8 @@
 
 -(id)initWithSize:(CGSize)size
 {
+    joysticktime = 0;
+    
     if(self = [super initWithSize:size]){
         
         self.joystick = [self createDefaultJoystick];
@@ -42,6 +46,11 @@
 }
 
 -(void)update:(CFTimeInterval)currentTime {
+    joysticktime ++;
+    if (joysticktime < 5) {
+        return;
+    }
+    joysticktime = 0;
     [super update:currentTime];
     JPServerConnector *jps = [JPServerConnector instance];
     [jps send: [NSString stringWithFormat:@"{\"event\":\"joystick\",\"x\":%f,\"y\":%f}",

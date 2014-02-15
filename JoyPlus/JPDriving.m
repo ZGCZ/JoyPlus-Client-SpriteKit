@@ -11,10 +11,17 @@
 
 #import "JPServerConnector.h"
 
+@interface JPDriving () {
+    int orientationtime;
+}
+
+@end
+
 @implementation JPDriving
 
 -(id)initWithSize:(CGSize)size
 {
+    int orientationtime = 0;
     if(self = [super initWithSize:size]){
         
         self.buttonOne = [self createButton];
@@ -32,6 +39,11 @@
 
 -(void)update:(CFTimeInterval)currentTime
 {
+    orientationtime ++;
+    if (orientationtime < 5) {
+        return;
+    }
+    orientationtime = 0;
     JPMotion* motion = [JPMotion instance];
     double orientation = [motion orientation];
     JPServerConnector *jps = [JPServerConnector instance];
