@@ -110,10 +110,10 @@
 
 - (void)pushScene
 {
-    [JPViewNavigator toMain];
     [self updateScene];
-    NSLog(@"Connect. Going to ConnectScene");
     if(scene){
+        [JPViewNavigator toMain];
+        NSLog(@"Connect. Going to ConnectScene");
         scene.scaleMode = SKSceneScaleModeAspectFill;
         [skView presentScene:scene];
         NSLog(@"Connect. Going to ControlScene");
