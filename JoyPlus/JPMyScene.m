@@ -30,7 +30,7 @@
         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         
         myLabel.text = @"Joy Plus";
-        myLabel.fontSize = 30;
+        myLabel.fontSize = 80;
         myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
                                        CGRectGetMidY(self.frame));
         
@@ -38,8 +38,8 @@
         
         SKLabelNode *connect = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         connect.text = @"[ connect ]";
-        connect.fontSize = 15;
-        connect.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)-40);
+        connect.fontSize = 50;
+        connect.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame)-100);
         connect.name = @"connect";
         connect.zPosition = 1.0;
         [self addChild:connect];

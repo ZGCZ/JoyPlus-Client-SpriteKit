@@ -59,18 +59,6 @@
                                     <action selector="connectServer:" destination="HN1-i2-TQD" eventType="touchUpInside" id="oL7-0C-5Gs"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="address" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="127.0.0.1:31415" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYC-wE-cuJ">
-                                <rect key="frame" x="281" y="24" width="298" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="port" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32v-Kx-j4c">
-                                <rect key="frame" x="602" y="24" width="298" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rgr-Dd-Pr7">
                                 <rect key="frame" x="30" y="68" width="964" height="671"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -82,8 +70,6 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="addressText" destination="XYC-wE-cuJ" id="ASg-ya-MWu"/>
-                        <outlet property="portText" destination="32v-Kx-j4c" id="YQl-nr-2Il"/>
                         <outlet property="scannerView" destination="Rgr-Dd-Pr7" id="ICL-Ci-FP2"/>
                     </connections>
                 </viewController>
