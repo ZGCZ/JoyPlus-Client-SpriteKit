@@ -17,9 +17,10 @@
 
 @interface JPConnectViewController (){
     SKScene *scene;
+    NSMutableDictionary *info;
 }
 
--(NSString*) toJSONWithIP:(NSString*)ip andPort: (int)port andID: (int)gameID andType: (NSString*) type;
+-(void)decodeJSON: (NSString*) jsonString;
 
 @end
 
@@ -57,14 +58,28 @@
 
 -(void)updateScene
 {
-    scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    NSString *type = [info objectForKey:@"type"];
+    if([type isEqual:@"Joy2Button"]){
+        scene = [JPJoy2Button sceneWithSize:skView.bounds.size];
+    }
+    else if ([type isEqual:@"Joy3Button"]){
+        scene = [JPJoy3Button sceneWithSize:skView.bounds.size];
+    }
+    else if ([type isEqual:@"JPDrag"]){
+        scene = [JPDrag sceneWithSize:skView.bounds.size];
+    }
+    else{
+        scene = NULL;
+    }
+    if (scene) {
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+    }
 }
 
--(NSString*)toJSONWithIP:(NSString*)ip andPort: (int)port andID: (int)gameID andType: (NSString*) type
+-(void)decodeJSON: (NSString*) jsonString
 {
-    return [NSString stringWithFormat:@"{\"ip\": \"%@\", \"port\": \"%d\", \"id\": \"%d\", \"type\" : \"%@\"}",
-            ip, port, gameID, type];
+    NSError *error = nil;
+    info = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:&error];
 }
 
 - (IBAction)backButton:(id)sender
@@ -91,10 +106,12 @@
 - (IBAction)connectServer:(id)sender
 {
     NSLog(@"Trying to connect server");
+    [self decodeJSON:@"information"];
+    [self updateScene];
     JPServerConnector* jpServerConnector = [JPServerConnector instance];
     [jpServerConnector setJPConnectViewController:self];
-    [jpServerConnector setGameId: self.portText.text.intValue];
-    [jpServerConnector connectServer:self.addressText.text];
+    [jpServerConnector setGameId: [(NSString*)[info objectForKey:@"id"] intValue]];
+    [jpServerConnector connectServer:[NSString stringWithFormat:@"%@:%@", [info objectForKey:@"ip"], [info objectForKey:@"port"]]];
 }
 
 @end
