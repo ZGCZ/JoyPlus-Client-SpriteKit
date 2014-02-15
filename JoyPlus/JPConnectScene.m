@@ -12,6 +12,7 @@
 #import "JPJoy3Button.h"
 #import "JPDrag.h"
 #import "JPCompatibility.h"
+#import "JPMotionButton.h"
 
 @interface JPConnectScene ()
 
@@ -49,7 +50,7 @@
 
 -(NSString*)informationJSONString
 {
-    return @"{\"type\": \"Joy2Button\"}";
+    return @"{\"type\": \"JPMotionButton\"}";
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -90,6 +91,9 @@
         }
         else if ([type isEqual:@"JPCompatibility"]){
             scene = [JPCompatibility sceneWithSize:skView.bounds.size];
+        }
+        else if ([type isEqual:@"JPMotionButton"]){
+            scene = [JPMotionButton sceneWithSize:skView.bounds.size];
         }
         if(scene){
             scene.scaleMode = SKSceneScaleModeAspectFill;
