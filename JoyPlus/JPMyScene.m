@@ -48,7 +48,6 @@
     
     //if fire button touched, bring the rain
     if ([node.name isEqualToString:@"connect"]) {
-        NSLog(@"try to go to strange place.");
         [JPViewNavigator toConnect];
         [[JPViewNavigator jpConnectViewController] setSKView:self.view];
     }

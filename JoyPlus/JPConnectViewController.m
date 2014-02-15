@@ -112,11 +112,11 @@
 {
     [self updateScene];
     if(scene){
-        [JPViewNavigator toMain];
         NSLog(@"Connect. Going to ConnectScene");
         scene.scaleMode = SKSceneScaleModeAspectFill;
         [skView presentScene:scene];
         NSLog(@"Connect. Going to ControlScene");
+        [JPViewNavigator toMain];
     }
 }
 
@@ -132,7 +132,6 @@
 
 - (void)receiveJson: (NSString*) input
 {
-    
     [self decodeJSON: input];
     [self updateScene];
     JPServerConnector* jpServerConnector = [JPServerConnector instance];
