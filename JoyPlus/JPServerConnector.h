@@ -18,7 +18,7 @@
 + (JPServerConnector*)instance;
 - (BOOL)isConnected;
 -(void)setJPConnectViewController: (JPConnectViewController*)c;
-- (void)connectServer: (NSString*) address;
+- (void)connectServer: (NSString*) address withGameId: (int) gameId;
 
 - (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message;
 - (void)webSocketDidOpen:(SRWebSocket *)webSocket;
