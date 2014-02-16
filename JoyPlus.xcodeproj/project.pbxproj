@@ -16,6 +16,9 @@
 		7774B72718AD014000D813D7 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72218AD014000D813D7 /* NSData+SRB64Additions.m */; };
 		7774B72818AD014000D813D7 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72518AD014000D813D7 /* SRWebSocket.m */; };
 		7774B72B18AD1B1300D813D7 /* JPViewNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */; };
+		77902EF518B03D96006B0337 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 77902EF418B03D96006B0337 /* bg.png */; };
+		77902EF818B03D9D006B0337 /* 76px.png in Resources */ = {isa = PBXBuildFile; fileRef = 77902EF618B03D9D006B0337 /* 76px.png */; };
+		77902EF918B03D9D006B0337 /* 152px.png in Resources */ = {isa = PBXBuildFile; fileRef = 77902EF718B03D9D006B0337 /* 152px.png */; };
 		77F64C5818AF9EC4006D0157 /* JPDriving.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F64C5718AF9EC4006D0157 /* JPDriving.m */; };
 		964553C218AF51540001D899 /* Joystick+JPJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 964553C118AF51540001D899 /* Joystick+JPJoystick.m */; };
 		964553C518AF51D50001D899 /* JPMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 964553C418AF51D50001D899 /* JPMotion.m */; };
@@ -82,6 +85,9 @@
 		7774B72518AD014000D813D7 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		7774B72918AD1B1300D813D7 /* JPViewNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPViewNavigator.h; sourceTree = "<group>"; };
 		7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPViewNavigator.m; sourceTree = "<group>"; };
+		77902EF418B03D96006B0337 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		77902EF618B03D9D006B0337 /* 76px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76px.png; sourceTree = "<group>"; };
+		77902EF718B03D9D006B0337 /* 152px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152px.png; sourceTree = "<group>"; };
 		77F64C5618AF9EC4006D0157 /* JPDriving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDriving.h; sourceTree = "<group>"; };
 		77F64C5718AF9EC4006D0157 /* JPDriving.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDriving.m; sourceTree = "<group>"; };
 		964553C018AF51540001D899 /* Joystick+JPJoystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Joystick+JPJoystick.h"; sourceTree = "<group>"; };
@@ -195,6 +201,9 @@
 		9655AFC418A33622000960E9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				77902EF618B03D9D006B0337 /* 76px.png */,
+				77902EF718B03D9D006B0337 /* 152px.png */,
+				77902EF418B03D96006B0337 /* bg.png */,
 				9655AFC518A33622000960E9 /* Button1.png */,
 				9655AFC618A33622000960E9 /* Button1Sel.png */,
 				96C29BF618A3A5A10034DA75 /* dpad.png */,
@@ -427,10 +436,13 @@
 			files = (
 				96A5CF0118A2AAA20072AFAB /* InfoPlist.strings in Resources */,
 				9655AFCC18A33622000960E9 /* Button1Sel.png in Resources */,
+				77902EF818B03D9D006B0337 /* 76px.png in Resources */,
+				77902EF518B03D96006B0337 /* bg.png in Resources */,
 				96C29BF918A3A5A10034DA75 /* joystick.png in Resources */,
 				96A5CF1418A2AAA20072AFAB /* Images.xcassets in Resources */,
 				96A5CF0A18A2AAA20072AFAB /* Main.storyboard in Resources */,
 				96C29BFF18A3AD8D0034DA75 /* Joystick.md in Resources */,
+				77902EF918B03D9D006B0337 /* 152px.png in Resources */,
 				96C29BF818A3A5A10034DA75 /* dpad.png in Resources */,
 				9655AFCB18A33622000960E9 /* Button1.png in Resources */,
 			);
@@ -597,7 +609,6 @@
 		96A5CF2B18A2AAA20072AFAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Xinzi Zhou (9SPLNQUXA3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -618,7 +629,6 @@
 		96A5CF2C18A2AAA20072AFAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Xinzi Zhou (9SPLNQUXA3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

@@ -21,7 +21,11 @@
 
 -(id)initWithSize:(CGSize)size {
     if(self = [super initWithSize:size]){
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        // self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
+        
+        SKSpriteNode *bgImage = [SKSpriteNode spriteNodeWithImageNamed:@"bg"];
+        bgImage.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
+        [self addChild:bgImage];
         
         SKLabelNode *back = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         back.text = @"[ back ]";
