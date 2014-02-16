@@ -76,8 +76,9 @@
 
 -(SKButton*)createButton
 {
+    NSLog(@"Button creating");
     NSString* tag = [NSString stringWithFormat:@"%c", t];
-    SKButton *buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
+    SKButton *buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button.png" selected:@"ButtonSel.png"];
     [buttonOne setScale:2.5];
     buttonOne.tag = tag;
     [buttonOne.title setText:tag];
@@ -90,7 +91,7 @@
 
 -(SKButton*)createButtonWithTitle:(NSString*)title andTag:(NSString*)tag
 {
-    SKButton *buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button1.png" selected:@"Button1Sel.png"];
+    SKButton *buttonOne = [[SKButton alloc] initWithImageNamedNormal:@"Button.png" selected:@"ButtonSel.png"];
     [buttonOne setScale:2.5];
     buttonOne.tag = tag;
     [buttonOne.title setText:title];

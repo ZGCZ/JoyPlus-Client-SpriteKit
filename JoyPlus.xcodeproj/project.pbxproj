@@ -16,6 +16,8 @@
 		7774B72718AD014000D813D7 /* NSData+SRB64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72218AD014000D813D7 /* NSData+SRB64Additions.m */; };
 		7774B72818AD014000D813D7 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72518AD014000D813D7 /* SRWebSocket.m */; };
 		7774B72B18AD1B1300D813D7 /* JPViewNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */; };
+		778393B818B042240036FED0 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 778393B618B042240036FED0 /* Button.png */; };
+		778393B918B042240036FED0 /* ButtonSel.png in Resources */ = {isa = PBXBuildFile; fileRef = 778393B718B042240036FED0 /* ButtonSel.png */; };
 		77902EF518B03D96006B0337 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 77902EF418B03D96006B0337 /* bg.png */; };
 		77902EF818B03D9D006B0337 /* 76px.png in Resources */ = {isa = PBXBuildFile; fileRef = 77902EF618B03D9D006B0337 /* 76px.png */; };
 		77902EF918B03D9D006B0337 /* 152px.png in Resources */ = {isa = PBXBuildFile; fileRef = 77902EF718B03D9D006B0337 /* 152px.png */; };
@@ -23,8 +25,6 @@
 		964553C218AF51540001D899 /* Joystick+JPJoystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 964553C118AF51540001D899 /* Joystick+JPJoystick.m */; };
 		964553C518AF51D50001D899 /* JPMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 964553C418AF51D50001D899 /* JPMotion.m */; };
 		9655AFC318A3342C000960E9 /* SKButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655AFC218A3342C000960E9 /* SKButton.m */; };
-		9655AFCB18A33622000960E9 /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC518A33622000960E9 /* Button1.png */; };
-		9655AFCC18A33622000960E9 /* Button1Sel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9655AFC618A33622000960E9 /* Button1Sel.png */; };
 		9655AFD318A345C3000960E9 /* SKButton+JPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9655AFD218A345C3000960E9 /* SKButton+JPButton.m */; };
 		9674552C18A876F7005C881E /* JPDrag.m in Sources */ = {isa = PBXBuildFile; fileRef = 9674552B18A876F7005C881E /* JPDrag.m */; };
 		96A5CEF518A2AAA20072AFAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96A5CEF418A2AAA20072AFAB /* Foundation.framework */; };
@@ -85,6 +85,8 @@
 		7774B72518AD014000D813D7 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		7774B72918AD1B1300D813D7 /* JPViewNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPViewNavigator.h; sourceTree = "<group>"; };
 		7774B72A18AD1B1300D813D7 /* JPViewNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPViewNavigator.m; sourceTree = "<group>"; };
+		778393B618B042240036FED0 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		778393B718B042240036FED0 /* ButtonSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonSel.png; sourceTree = "<group>"; };
 		77902EF418B03D96006B0337 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		77902EF618B03D9D006B0337 /* 76px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76px.png; sourceTree = "<group>"; };
 		77902EF718B03D9D006B0337 /* 152px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152px.png; sourceTree = "<group>"; };
@@ -96,8 +98,6 @@
 		964553C418AF51D50001D899 /* JPMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPMotion.m; sourceTree = "<group>"; };
 		9655AFC118A3342C000960E9 /* SKButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKButton.h; sourceTree = "<group>"; };
 		9655AFC218A3342C000960E9 /* SKButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKButton.m; sourceTree = "<group>"; };
-		9655AFC518A33622000960E9 /* Button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1.png; sourceTree = "<group>"; };
-		9655AFC618A33622000960E9 /* Button1Sel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1Sel.png; sourceTree = "<group>"; };
 		9655AFD118A345C3000960E9 /* SKButton+JPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKButton+JPButton.h"; sourceTree = "<group>"; };
 		9655AFD218A345C3000960E9 /* SKButton+JPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKButton+JPButton.m"; sourceTree = "<group>"; };
 		9674552A18A876F7005C881E /* JPDrag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDrag.h; sourceTree = "<group>"; };
@@ -201,11 +201,11 @@
 		9655AFC418A33622000960E9 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				778393B618B042240036FED0 /* Button.png */,
+				778393B718B042240036FED0 /* ButtonSel.png */,
 				77902EF618B03D9D006B0337 /* 76px.png */,
 				77902EF718B03D9D006B0337 /* 152px.png */,
 				77902EF418B03D96006B0337 /* bg.png */,
-				9655AFC518A33622000960E9 /* Button1.png */,
-				9655AFC618A33622000960E9 /* Button1Sel.png */,
 				96C29BF618A3A5A10034DA75 /* dpad.png */,
 				96C29BF718A3A5A10034DA75 /* joystick.png */,
 			);
@@ -435,16 +435,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A5CF0118A2AAA20072AFAB /* InfoPlist.strings in Resources */,
-				9655AFCC18A33622000960E9 /* Button1Sel.png in Resources */,
 				77902EF818B03D9D006B0337 /* 76px.png in Resources */,
 				77902EF518B03D96006B0337 /* bg.png in Resources */,
 				96C29BF918A3A5A10034DA75 /* joystick.png in Resources */,
 				96A5CF1418A2AAA20072AFAB /* Images.xcassets in Resources */,
+				778393B818B042240036FED0 /* Button.png in Resources */,
 				96A5CF0A18A2AAA20072AFAB /* Main.storyboard in Resources */,
+				778393B918B042240036FED0 /* ButtonSel.png in Resources */,
 				96C29BFF18A3AD8D0034DA75 /* Joystick.md in Resources */,
 				77902EF918B03D9D006B0337 /* 152px.png in Resources */,
 				96C29BF818A3A5A10034DA75 /* dpad.png in Resources */,
-				9655AFCB18A33622000960E9 /* Button1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
