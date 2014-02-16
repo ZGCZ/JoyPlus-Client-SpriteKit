@@ -23,33 +23,45 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [super touchesBegan:touches withEvent:event];
-    UITouch* touch = [touches anyObject];
-    CGPoint positionInScene = [touch locationInNode:self];
-    originX = positionInScene.x;
-    originY = positionInScene.y;
+    @try {
+        [super touchesBegan:touches withEvent:event];
+        UITouch* touch = [touches anyObject];
+        CGPoint positionInScene = [touch locationInNode:self];
+        originX = positionInScene.x;
+        originY = positionInScene.y;
+        pathToDraw = CGPathCreateMutable();
+        CGPathMoveToPoint(pathToDraw, NULL, positionInScene.x, positionInScene.y);
+    }
+    @catch (NSException *exception) {
+        originX = 0;
+        originX = 0;
+    }
+    @finally {
+        JPServerConnector *jps = [JPServerConnector instance];
+        [jps send: [NSString stringWithFormat:@"{\"event\":\"dragStart\",\"x\":%f,\"y\":%f}",
+                    .0,
+                    .0]];
+        line = [SKShapeNode node];
+        line.path = pathToDraw;
+        line.strokeColor = [SKColor redColor];
+        [self addChild:line];
+    }
     
-    JPServerConnector *jps = [JPServerConnector instance];
-    [jps send: [NSString stringWithFormat:@"{\"event\":\"dragStart\",\"x\":%f,\"y\":%f}",
-                .0,
-                .0]];
-    
-    pathToDraw = CGPathCreateMutable();
-    CGPathMoveToPoint(pathToDraw, NULL, positionInScene.x, positionInScene.y);
-    
-    line = [SKShapeNode node];
-    line.path = pathToDraw;
-    line.strokeColor = [SKColor redColor];
-    [self addChild:line];
 }
 
 - (void)touchesMoved:(NSSet*)touches withEvent:(UIEvent*)event
 {
     [super touchesMoved:touches withEvent:event];
+    
     UITouch* touch = [touches anyObject];
     CGPoint positionInScene = [touch locationInNode:self];
+    if (originX==0 && originY==0) {
+        originX = positionInScene.x;
+        originY = positionInScene.y;
+    }
     [self updateTouchPoint:touch];
     CGPathAddLineToPoint(pathToDraw, NULL, positionInScene.x, positionInScene.y);
+    
     line.path = pathToDraw;
 }
 
