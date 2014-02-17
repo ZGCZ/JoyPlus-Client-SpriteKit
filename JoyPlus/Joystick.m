@@ -81,6 +81,7 @@
             }
             else
             {
+                /*
                 double vX = touchPoint.x - self.anchorPointInPoints.x;
                 double vY = touchPoint.y - self.anchorPointInPoints.y;
                 double magV = sqrt(vX*vX + vY*vY);
@@ -88,6 +89,7 @@
                 double aY = self.anchorPointInPoints.y + vY / magV * thumbNode.size.width;
                 
                 thumbNode.position = CGPointMake(aX, aY);
+                 */
             }
         }
         velocity = CGPointMake(((thumbNode.position.x - self.anchorPointInPoints.x)), ((thumbNode.position.y - self.anchorPointInPoints.y)));
